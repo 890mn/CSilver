@@ -5,7 +5,7 @@ import FluentUI
 Rectangle {
     id: lightSettings
     width: parent.width - 20
-    height: 400
+    height: 100  // 初始高度设置为较小的值
     radius: 10
     border.color: "#a0a0a0"
     color: "white"
@@ -17,13 +17,16 @@ Rectangle {
 
     // 计算外框高度的函数
     function updateHeight() {
-        var totalHeight = 0;
+        var totalHeight = 100;  // 初始高度
+
+        // 计算每个光源的高度
         for (var i = 0; i < lightSources.count; i++) {
             var item = lightSources.get(i);
-            totalHeight += item.expanded ? 160 : 50; // 每个展开的光源占据 160 高度，折叠的占据 50 高度
+            totalHeight += item.expanded ? 160 : 50; // 展开状态光源占 160 高度，折叠状态占 50 高度
         }
-        // 设置新的高度（最小值为 400）
-        lightSettings.height = Math.max(totalHeight + 20, 400);
+
+        // 设置新的高度（保持最小为 100，避免高度小于初始值）
+        lightSettings.height = totalHeight;
     }
 
     Column {
@@ -44,14 +47,17 @@ Rectangle {
             Button {
                 text: qsTr("添加光源")
                 onClicked: {
+                    // 添加新光源时，默认是折叠状态
                     lightSources.append({
                         "name": "光源 " + (lightSources.count + 1),
                         "intensity": 50,
                         "positionX": 300,
                         "positionY": 200,
-                        "expanded": false // 初始化展开状态
+                        "expanded": false // 默认折叠
                     });
-                    updateHeight(); // 添加光源后更新外框高度
+
+                    // 更新外框高度
+                    updateHeight();
                 }
             }
         }
