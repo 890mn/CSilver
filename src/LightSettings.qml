@@ -15,6 +15,17 @@ Rectangle {
         simulationCanvas.lightSources = lightSources; // 绑定外部模型
     }
 
+    // 计算外框高度的函数
+    function updateHeight() {
+        var totalHeight = 0;
+        for (var i = 0; i < lightSources.count; i++) {
+            var item = lightSources.get(i);
+            totalHeight += item.expanded ? 160 : 50; // 每个展开的光源占据 160 高度，折叠的占据 50 高度
+        }
+        // 设置新的高度（最小值为 400）
+        lightSettings.height = Math.max(totalHeight + 20, 400);
+    }
+
     Column {
         anchors.fill: parent
         spacing: 10
@@ -40,6 +51,7 @@ Rectangle {
                         "positionY": 200,
                         "expanded": false // 初始化展开状态
                     });
+                    updateHeight(); // 添加光源后更新外框高度
                 }
             }
         }
@@ -53,7 +65,7 @@ Rectangle {
             delegate: Rectangle {
                 id: lightItem
                 width: parent.width - 40
-                height: model.expanded ? 250 : 50
+                height: model.expanded ? 150 : 50
                 radius: 5
                 border.color: "#d0d0d0"
                 color: "lightgray"
@@ -85,6 +97,7 @@ Rectangle {
                                         positionY: model.positionY,
                                         expanded: !model.expanded
                                     });
+                                    updateHeight(); // 更新外框高度
                                 }
                             }
                         }
@@ -96,6 +109,7 @@ Rectangle {
                                 if (lightSources.get(index)) {
                                     // 删除当前项
                                     lightSources.remove(index);
+                                    updateHeight(); // 删除光源后更新外框高度
 
                                     // 调整序号
                                     for (var i = 0; i < lightSources.count; i++) {

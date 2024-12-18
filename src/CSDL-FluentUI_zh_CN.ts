@@ -99,44 +99,44 @@
     </message>
 </context>
 <context>
-    <name>LightSettingsModule</name>
+    <name>LightSettings</name>
     <message>
-        <location filename="LightSettingsModule.qml" line="28"/>
+        <location filename="LightSettings.qml" line="39"/>
         <source>光源设置</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="LightSettingsModule.qml" line="34"/>
+        <location filename="LightSettings.qml" line="45"/>
         <source>添加光源</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="LightSettingsModule.qml" line="77"/>
+        <location filename="LightSettings.qml" line="89"/>
         <source>折叠</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="LightSettingsModule.qml" line="77"/>
+        <location filename="LightSettings.qml" line="89"/>
         <source>展开</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="LightSettingsModule.qml" line="93"/>
+        <location filename="LightSettings.qml" line="106"/>
         <source>删除</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="LightSettingsModule.qml" line="123"/>
+        <location filename="LightSettings.qml" line="137"/>
         <source>强度</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="LightSettingsModule.qml" line="174"/>
+        <location filename="LightSettings.qml" line="188"/>
         <source>位置 X</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="LightSettingsModule.qml" line="225"/>
+        <location filename="LightSettings.qml" line="239"/>
         <source>位置 Y</source>
         <translation type="unfinished"></translation>
     </message>

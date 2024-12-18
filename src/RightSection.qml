@@ -16,7 +16,7 @@ ScrollView {
         IndoorEnvironmentModule {}
 
         // 光源设置模块
-        LightSettingsModule {}
+        LightSettings {}
 
         // 其他模块和按钮
         AdditionalModule {}

@@ -14,7 +14,9 @@ Rectangle {
     property real rectWidth: 0 // 矩形宽度
     property real rectHeight: 0 // 矩形高度
 
-    property var lightSources: ListModel { }
+    property var lightSources: ListModel {
+        ListElement { name: "光源 1"; positionX: 100; positionY: 150; intensity: 50 }
+    }
 
     onRectWidthChanged: adjustAxes()
     onRectHeightChanged: adjustAxes()
@@ -133,7 +135,5 @@ Rectangle {
             console.log("Data changed: ", start, end, roles)
             canvas.requestPaint() // 请求画布重绘
         }
-
     }
-
-                                                                                                                                                                                                                                                                                                                               }
+}
