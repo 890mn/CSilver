@@ -1,0 +1,10 @@
+^D:\STUDY_DATA\CS_MAJOR\SOFTWARE\QT\CSDL-FLUENTUI\BUILD\CMAKEFILES\AA1EF61B16BE92BCB462996F09AFDED8\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -SD:/study_data/CS_Major/Software/QT/CSDL-FluentUI -BD:/study_data/CS_Major/Software/QT/CSDL-FluentUI/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/study_data/CS_Major/Software/QT/CSDL-FluentUI/build/CSDL-FluentUI.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

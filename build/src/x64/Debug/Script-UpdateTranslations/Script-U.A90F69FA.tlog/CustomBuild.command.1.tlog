@@ -1,0 +1,34 @@
+^D:\STUDY_DATA\CS_MAJOR\SOFTWARE\QT\CSDL-FLUENTUI\BUILD\CMAKEFILES\8C704108731494782E078851D3532305\SCRIPT-UPDATETRANSLATIONS.RULE
+setlocal
+cd D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\src
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\normal_program\QT\6.7.3\msvc2019_64\bin\lupdate.exe D:/study_data/CS_Major/Software/QT/CSDL-FluentUI/src -ts CSDL-FluentUI_en_US.ts
+if %errorlevel% neq 0 goto :cmEnd
+D:\normal_program\QT\6.7.3\msvc2019_64\bin\lupdate.exe D:/study_data/CS_Major/Software/QT/CSDL-FluentUI/src -ts CSDL-FluentUI_zh_CN.ts
+if %errorlevel% neq 0 goto :cmEnd
+D:\normal_program\QT\6.7.3\msvc2019_64\bin\lrelease.exe CSDL-FluentUI_en_US.ts
+if %errorlevel% neq 0 goto :cmEnd
+D:\normal_program\QT\6.7.3\msvc2019_64\bin\lrelease.exe CSDL-FluentUI_zh_CN.ts
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E make_directory D:/study_data/CS_Major/Software/QT/CSDL-FluentUI/bin//i18n
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy CSDL-FluentUI_en_US.qm CSDL-FluentUI_zh_CN.qm D:/study_data/CS_Major/Software/QT/CSDL-FluentUI/bin//i18n
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\STUDY_DATA\CS_MAJOR\SOFTWARE\QT\CSDL-FLUENTUI\SRC\CMAKELISTS.TXT
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -SD:/study_data/CS_Major/Software/QT/CSDL-FluentUI -BD:/study_data/CS_Major/Software/QT/CSDL-FluentUI/build --check-stamp-file D:/study_data/CS_Major/Software/QT/CSDL-FluentUI/build/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

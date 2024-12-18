@@ -1,0 +1,1230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\fluentuiplugin_autogen\mocs_compilation_Debug.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\fluentuiplugin_qmltyperegistrations.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.qt\rcc\qrc_qmake_FluentUI.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\fluentuiplugin_FluentUIPlugin.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\FluAccentColor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\FluApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\FluCaptcha.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\FluColors.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\FluFrameless.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\FluHotkey.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\FluQrCodeItem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\FluRectangle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\FluTableModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\FluTableSortProxyModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\FluTextStyle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\FluTheme.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\FluTools.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\FluTreeModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\FluWatermark.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\qhotkey\qhotkey.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\qmlcustomplot\TimePlot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\qmlcustomplot\axis.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\qmlcustomplot\baseplot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\qmlcustomplot\graph.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\qmlcustomplot\grid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\qmlcustomplot\qcustomplot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\qmlcustomplot\ticker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\qrcode\bitstream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\qrcode\mask.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\qrcode\mmask.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\qrcode\mqrspec.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\qrcode\qrencode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\qrcode\qrinput.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\qrcode\qrspec.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\qrcode\rsecc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\qrcode\split.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\qhotkey\qhotkey_win.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_qmlcache_loader.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluAcrylic_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluAppBar_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluAutoSuggestBox_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluBadge_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluBreadcrumbBar_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluButton_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluCalendarPicker_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluCarousel_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluChart_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluCheckBox_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluClip_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluColorPicker_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluComboBox_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluContentDialog_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluContentPage_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluControl_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluControlBackground_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluCopyableText_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluDatePicker_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluDivider_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluDropDownButton_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluEvent_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluEventBus_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluExpander_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluFilledButton_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluFlipView_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluFocusRectangle_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluFrame_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluGroupBox_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluIcon_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluIconButton_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluImage_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluImageButton_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluInfoBar_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluItemDelegate_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluLauncher_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluLoader_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluLoadingButton_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluMenu_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluMenuBar_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluMenuBarItem_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluMenuItem_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluMenuSeparator_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluMultilineTextBox_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluNavigationView_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluObject_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluPage_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluPagination_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluPaneItem_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluPaneItemEmpty_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluPaneItemExpander_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluPaneItemHeader_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluPaneItemSeparator_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluPasswordBox_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluPivot_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluPivotItem_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluPopup_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluProgressBar_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluProgressButton_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluProgressRing_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluQRCode_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluRadioButton_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluRadioButtons_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluRangeSlider_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluRatingControl_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluRemoteLoader_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluRouter_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluScrollBar_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluScrollIndicator_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluScrollablePage_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluShadow_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluSheet_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluShortcutPicker_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluSlider_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluSpinBox_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluSplitLayout_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluStaggeredLayout_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluStatusLayout_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluTabView_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluTableView_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluText_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluTextBox_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluTextBoxBackground_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluTextBoxMenu_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluTextButton_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluTimePicker_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluTimeline_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluToggleButton_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluToggleSwitch_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluTooltip_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluTour_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluTreeView_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluWindow_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluWindowDialog_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.rcc\qmlcache\fluentuiplugin_Qt6\imports\FluentUI\Controls\FluWindowResultLauncher_qml.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.qt\rcc\qrc_fluentuiplugin_raw_qml_0.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\fluentuiplugin_autogen\mocs_compilation_Release.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\fluentuiplugin_autogen\mocs_compilation_MinSizeRel.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\fluentuiplugin_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\ddf_fluentuiplugin.h">
+      <Filter>Source Files\Generated</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Def.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\FluAccentColor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\FluApp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\FluCaptcha.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\FluColors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\FluFrameless.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\FluHotkey.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\FluQrCodeItem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\FluRectangle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\FluTableModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\FluTableSortProxyModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\FluTextStyle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\FluTheme.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\FluTools.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\FluTreeModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\FluWatermark.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\FluentIconDef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\qhotkey\qhotkey.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\qhotkey\qhotkey_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\qmlcustomplot\TimePlot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\qmlcustomplot\axis.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\qmlcustomplot\baseplot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\qmlcustomplot\graph.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\qmlcustomplot\grid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\qmlcustomplot\macros.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\qmlcustomplot\qcustomplot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\qmlcustomplot\ticker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\qrcode\bitstream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\qrcode\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\qrcode\mask.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\qrcode\mmask.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\qrcode\mqrspec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\qrcode\qrencode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\qrcode\qrencode_inner.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\qrcode\qrinput.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\qrcode\qrspec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\qrcode\rsecc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\qrcode\split.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\singleton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.qt\rcc\qmake_FluentUI.qrc">
+      <Filter>Source Files\Generated</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\normal_program\QT\6.7.3\msvc2019_64\qml\FluentUI\qmldir">
+      <Filter>Source Files\Generated</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\.qt\rcc\fluentuiplugin_raw_qml_0.qrc">
+      <Filter>Source Files\Generated</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\qmldir" />
+    <ClInclude Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Font\FluentIcons.ttf" />
+    <ClInclude Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Image\btn_close_hovered.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Image\btn_close_normal.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Image\btn_close_pushed.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Image\btn_max_hovered.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Image\btn_max_normal.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Image\btn_max_pushed.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Image\btn_min_hovered.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Image\btn_min_normal.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Image\btn_min_pushed.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Image\noise.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\JS\Chart.js" />
+    <ClInclude Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\i18n\fluentui_en_US.qm" />
+    <ClInclude Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\i18n\fluentui_zh_CN.qm" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\17ecac56fd35c91eb5f1cbd7044f9547\qt6fluentuiplugin_metatypes.json.gen.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\df5e5e3dd588c22519d8c0c75714abfa\fluentuiplugin_qmltyperegistrations.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\1562379e991ce1523df304b6530ea9ab\qrc_qmake_FluentUI.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\eb80eea605c0c03a4210fd3d6220a96c\fluentuiplugin_qmlcache_loader.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluAcrylic_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluAppBar_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluAutoSuggestBox_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluBadge_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluBreadcrumbBar_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluButton_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluCalendarPicker_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluCarousel_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluChart_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluCheckBox_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluClip_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluColorPicker_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluComboBox_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluContentDialog_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluContentPage_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluControl_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluControlBackground_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluCopyableText_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluDatePicker_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluDivider_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluDropDownButton_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluEvent_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluEventBus_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluExpander_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluFilledButton_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluFlipView_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluFocusRectangle_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluFrame_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluGroupBox_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluIcon_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluIconButton_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluImage_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluImageButton_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluInfoBar_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluItemDelegate_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluLauncher_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluLoader_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluLoadingButton_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluMenu_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluMenuBar_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluMenuBarItem_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluMenuItem_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluMenuSeparator_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluMultilineTextBox_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluNavigationView_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluObject_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluPage_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluPagination_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluPaneItem_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluPaneItemEmpty_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluPaneItemExpander_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluPaneItemHeader_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluPaneItemSeparator_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluPasswordBox_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluPivot_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluPivotItem_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluPopup_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluProgressBar_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluProgressButton_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluProgressRing_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluQRCode_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluRadioButton_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluRadioButtons_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluRangeSlider_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluRatingControl_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluRemoteLoader_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluRouter_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluScrollBar_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluScrollIndicator_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluScrollablePage_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluShadow_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluSheet_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluShortcutPicker_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluSlider_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluSpinBox_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluSplitLayout_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluStaggeredLayout_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluStatusLayout_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluTabView_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluTableView_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluText_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluTextBox_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluTextBoxBackground_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluTextBoxMenu_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluTextButton_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluTimePicker_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluTimeline_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluToggleButton_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluToggleSwitch_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluTooltip_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluTour_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluTreeView_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluWindow_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluWindowDialog_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\308e2e94350832296caff8aa68f311a1\FluWindowResultLauncher_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\CMakeFiles\1562379e991ce1523df304b6530ea9ab\qrc_fluentuiplugin_raw_qml_0.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\meta_types\qt6fluentuiplugin_metatypes.json.gen">
+      <Filter>Source Files\Generated</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluAcrylic.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluAppBar.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluAutoSuggestBox.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluBadge.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluBreadcrumbBar.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluButton.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluCalendarPicker.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluCarousel.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluChart.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluCheckBox.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluClip.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluColorPicker.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluComboBox.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluContentDialog.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluContentPage.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluControl.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluControlBackground.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluCopyableText.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluDatePicker.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluDivider.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluDropDownButton.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluEvent.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluEventBus.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluExpander.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluFilledButton.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluFlipView.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluFocusRectangle.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluFrame.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluGroupBox.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluIcon.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluIconButton.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluImage.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluImageButton.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluInfoBar.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluItemDelegate.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluLauncher.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluLoader.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluLoadingButton.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluMenu.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluMenuBar.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluMenuBarItem.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluMenuItem.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluMenuSeparator.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluMultilineTextBox.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluNavigationView.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluObject.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluPage.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluPagination.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluPaneItem.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluPaneItemEmpty.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluPaneItemExpander.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluPaneItemHeader.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluPaneItemSeparator.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluPasswordBox.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluPivot.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluPivotItem.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluPopup.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluProgressBar.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluProgressButton.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluProgressRing.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluQRCode.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluRadioButton.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluRadioButtons.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluRangeSlider.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluRatingControl.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluRemoteLoader.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluRouter.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluScrollBar.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluScrollIndicator.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluScrollablePage.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluShadow.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluSheet.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluShortcutPicker.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluSlider.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluSpinBox.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluSplitLayout.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluStaggeredLayout.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluStatusLayout.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluTabView.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluTableView.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluText.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluTextBox.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluTextBoxBackground.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluTextBoxMenu.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluTextButton.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluTimePicker.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluTimeline.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluToggleButton.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluToggleSwitch.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluTooltip.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluTour.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluTreeView.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluWindow.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluWindowDialog.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\FluentUI\Qt6\imports\FluentUI\Controls\FluWindowResultLauncher.qml">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\normal_program\QT\6.7.3\msvc2019_64\metatypes\qt6qml_metatypes.json">
+      <Filter>Source Files\Generated</Filter>
+    </None>
+    <None Include="D:\normal_program\QT\6.7.3\msvc2019_64\metatypes\qt6core_metatypes.json">
+      <Filter>Source Files\Generated</Filter>
+    </None>
+    <None Include="D:\normal_program\QT\6.7.3\msvc2019_64\metatypes\qt6qmlbuiltins_metatypes.json">
+      <Filter>Source Files\Generated</Filter>
+    </None>
+    <None Include="D:\normal_program\QT\6.7.3\msvc2019_64\metatypes\qt6network_metatypes.json">
+      <Filter>Source Files\Generated</Filter>
+    </None>
+    <None Include="D:\normal_program\QT\6.7.3\msvc2019_64\metatypes\qt6quick_metatypes.json">
+      <Filter>Source Files\Generated</Filter>
+    </None>
+    <None Include="D:\normal_program\QT\6.7.3\msvc2019_64\metatypes\qt6gui_metatypes.json">
+      <Filter>Source Files\Generated</Filter>
+    </None>
+    <None Include="D:\normal_program\QT\6.7.3\msvc2019_64\metatypes\qt6qmlmodels_metatypes.json">
+      <Filter>Source Files\Generated</Filter>
+    </None>
+    <None Include="D:\normal_program\QT\6.7.3\msvc2019_64\metatypes\qt6opengl_metatypes.json">
+      <Filter>Source Files\Generated</Filter>
+    </None>
+    <None Include="D:\normal_program\QT\6.7.3\msvc2019_64\metatypes\qt6widgets_metatypes.json">
+      <Filter>Source Files\Generated</Filter>
+    </None>
+    <None Include="D:\normal_program\QT\6.7.3\msvc2019_64\metatypes\qt6printsupport_metatypes.json">
+      <Filter>Source Files\Generated</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\version_fluentuiplugin.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{249AECDF-EE0D-3721-887B-805B827088A3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{05B9E03A-E937-3F70-90F0-31F3EF53512C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{3874CD4C-C11B-3085-AAB8-B1F2072650C5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{C780B92D-EBC5-3C9A-A9C7-56823B9D3360}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Generated">
+      <UniqueIdentifier>{5084CA38-393E-3BB6-967C-309132B34CA2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

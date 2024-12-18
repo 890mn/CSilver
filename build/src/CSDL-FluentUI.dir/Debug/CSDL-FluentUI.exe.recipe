@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\x64\Debug\ZERO_CHECK</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\src\x64\Debug\CSDL-FluentUI_qmlimportscan</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\src\x64\Debug\Script-UpdateTranslations</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\x64\Debug\fluentuiplugin_tooling</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\x64\Debug\fluentuiplugin_autogen</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\x64\Debug\fluentuiplugin_automoc_json_extraction</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\build\FluentUI\fluentuiplugind.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\study_data\CS_Major\Software\QT\CSDL-FluentUI\bin\Debug\CSDL-FluentUI.exe</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>
