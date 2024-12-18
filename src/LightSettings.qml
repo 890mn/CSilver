@@ -53,7 +53,7 @@ Rectangle {
                         "name": "Light-T8-" + (lightSources.count + 1),
                         "intensity": 50,
                         "positionX": 250,
-                        "positionY": 150,
+                        "positionY": 200,
                         "expanded": false // 默认折叠
                     });
 
