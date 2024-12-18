@@ -106,18 +106,10 @@ Rectangle {
                             }
                         }
 
-                        Text {
-                            x: 30
-                            y: 1
-                            text: model.name
-                            font.pixelSize: 23
-                            font.family: smileFont.name
-                        }
-
                         FluButton {
-                            x: parent.width - 40
-                            text: model.expanded ? qsTr("◸") : qsTr("◿")
-                            font.pixelSize: 18
+                            text: model.expanded ? qsTr("CLOSE  ⮃") : qsTr("OPEN   ⮃")
+                            font.family: smileFont.name
+                            font.pixelSize: 16
                             onClicked: {
                                 // 更新展开状态
                                 if (lightSources.get(index)) {
@@ -131,6 +123,14 @@ Rectangle {
                                     updateHeight(); // 更新外框高度
                                 }
                             }
+                        }
+
+                        Text {
+                            x: 30
+                            y: 1
+                            text: model.name
+                            font.pixelSize: 23
+                            font.family: smileFont.name
                         }
                     }
 

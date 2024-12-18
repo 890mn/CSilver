@@ -116,14 +116,15 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="LightSettings.qml" line="119"/>
-        <source>◸</source>
-        <oldsource>⇱</oldsource>
+        <location filename="LightSettings.qml" line="110"/>
+        <source>CLOSE  ⮃</source>
+        <oldsource>CLOSE ⮃</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="LightSettings.qml" line="119"/>
-        <source>◿</source>
+        <location filename="LightSettings.qml" line="110"/>
+        <source>CLOSE  ⮃</source>
+        <oldsource>OPEN  ⮃</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
