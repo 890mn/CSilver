@@ -18,6 +18,10 @@ Rectangle {
         ListElement { name: "Light-T8-1"; positionX: 100; positionY: 150; intensity: 50 }
     }
 
+    property var addSources: ListModel {
+        ListElement { name: "Sensor-1"; positionX: 100; positionY: 150}
+    }
+
     onRectWidthChanged: adjustAxes()
     onRectHeightChanged: adjustAxes()
 

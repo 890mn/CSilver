@@ -12,13 +12,12 @@ ScrollView {
         width: rightSection.width
         spacing: 10
 
-        // 室内环境模块
         IndoorEnvironmentModule {}
 
-        // 光源设置模块
         LightSettings {}
 
-        // 其他模块和按钮
-        AdditionalModule {}
+        AddSettings {}
+
+        Others {}
     }
 }

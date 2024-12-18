@@ -11,9 +11,10 @@
         <file>TopSection.qml</file>
         <file>SimulationCanvas.qml</file>
         <file>RightSection.qml</file>
-        <file>AdditionalModule.qml</file>
+        <file>AddSettings.qml</file>
         <file>IndoorEnvironmentModule.qml</file>
         <file>LightSettings.qml</file>
         <file>BottomSection.qml</file>
+        <file>Others.qml</file>
     </qresource>
 </RCC>

@@ -2,10 +2,41 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="en_US">
 <context>
-    <name>AdditionalModule</name>
+    <name>AddSettings</name>
     <message>
-        <location filename="AdditionalModule.qml" line="13"/>
-        <source>扩展模块</source>
+        <location filename="AddSettings.qml" line="44"/>
+        <source>传感器设置</source>
+        <oldsource>光源设置</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="AddSettings.qml" line="50"/>
+        <source>+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="AddSettings.qml" line="95"/>
+        <source>-</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="AddSettings.qml" line="115"/>
+        <source>CLOSE  ⮃</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="AddSettings.qml" line="115"/>
+        <source>OPEN   ⮃</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="AddSettings.qml" line="155"/>
+        <source>位置 X    </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="AddSettings.qml" line="206"/>
+        <source>位置 Y    </source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -102,47 +133,55 @@
 <context>
     <name>LightSettings</name>
     <message>
-        <location filename="LightSettings.qml" line="42"/>
+        <location filename="LightSettings.qml" line="44"/>
         <source>光源设置</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="LightSettings.qml" line="48"/>
+        <location filename="LightSettings.qml" line="50"/>
         <source>+</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="LightSettings.qml" line="91"/>
+        <location filename="LightSettings.qml" line="95"/>
         <source>-</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="LightSettings.qml" line="111"/>
+        <location filename="LightSettings.qml" line="115"/>
         <source>CLOSE  ⮃</source>
         <oldsource>CLOSE ⮃</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="LightSettings.qml" line="111"/>
+        <location filename="LightSettings.qml" line="115"/>
         <source>OPEN   ⮃</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="LightSettings.qml" line="151"/>
+        <location filename="LightSettings.qml" line="155"/>
         <source>照度 Lux</source>
         <oldsource>照度 Lm</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="LightSettings.qml" line="202"/>
+        <location filename="LightSettings.qml" line="206"/>
         <source>位置 X    </source>
         <oldsource>位置 X   </oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="LightSettings.qml" line="253"/>
+        <location filename="LightSettings.qml" line="257"/>
         <source>位置 Y    </source>
         <oldsource>位置 Y   </oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>Others</name>
+    <message>
+        <location filename="Others.qml" line="13"/>
+        <source>扩展模块</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -152,6 +191,14 @@
         <location filename="main.qml" line="11"/>
         <source>CSilver</source>
         <oldsource>CSilver.0.1</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>others</name>
+    <message>
+        <location filename="others.qml" line="13"/>
+        <source>扩展模块</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

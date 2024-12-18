@@ -5,7 +5,7 @@ import FluentUI
 Rectangle {
     id: lightSettings
     width: parent.width - 20
-    height: 100  // 初始高度设置为较小的值
+    height: 60
     radius: 10
     border.color: "#a0a0a0"
     color: "white"
@@ -15,14 +15,16 @@ Rectangle {
         simulationCanvas.lightSources = lightSources; // 绑定外部模型
     }
 
+    property int maxLight: 8
+
     // 计算外框高度的函数
     function updateHeight() {
-        var totalHeight = 100;  // 初始高度
+        var totalHeight = 60;  // 初始高度
 
         // 计算每个光源的高度
         for (var i = 0; i < lightSources.count; i++) {
             var item = lightSources.get(i);
-            totalHeight += item.expanded ? 180 : 50; // 展开状态光源占 180 高度，折叠状态占 50 高度
+            totalHeight += item.expanded ? 190 : 60; // 展开状态光源占 180 高度，折叠状态占 60 高度
         }
 
         // 设置新的高度（保持最小为 100，避免高度小于初始值）
@@ -48,17 +50,19 @@ Rectangle {
                 text: qsTr("+")
                 font.pixelSize: 18
                 onClicked: {
-                    // 添加新光源时，默认是折叠状态
-                    lightSources.append({
-                        "name": "Light-T8-" + (lightSources.count + 1),
-                        "intensity": 50,
-                        "positionX": 250,
-                        "positionY": 200,
-                        "expanded": false // 默认折叠
-                    });
+                    if (lightSources.count < maxLight) {
+                        // 添加新光源时，默认是折叠状态
+                        lightSources.append({
+                            "name": "Light-T8-" + (lightSources.count + 1),
+                            "intensity": 50,
+                            "positionX": 250,
+                            "positionY": 200,
+                            "expanded": false // 默认折叠
+                        });
 
-                    // 更新外框高度
-                    updateHeight();
+                        // 更新外框高度
+                        updateHeight();
+                    }
                 }
             }
         }
