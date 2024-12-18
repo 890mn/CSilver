@@ -53,7 +53,7 @@ Rectangle {
             delegate: Rectangle {
                 id: lightItem
                 width: parent.width - 40
-                height: model.expanded ? 250 : 50
+                height: model.expanded ? 150 : 50
                 radius: 5
                 border.color: "#d0d0d0"
                 color: "lightgray"
