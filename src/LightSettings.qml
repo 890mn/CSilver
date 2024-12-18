@@ -22,7 +22,7 @@ Rectangle {
         // 计算每个光源的高度
         for (var i = 0; i < lightSources.count; i++) {
             var item = lightSources.get(i);
-            totalHeight += item.expanded ? 160 : 50; // 展开状态光源占 160 高度，折叠状态占 50 高度
+            totalHeight += item.expanded ? 180 : 45; // 展开状态光源占 160 高度，折叠状态占 50 高度
         }
 
         // 设置新的高度（保持最小为 100，避免高度小于初始值）
@@ -32,7 +32,7 @@ Rectangle {
     Column {
         anchors.fill: parent
         spacing: 10
-        padding: 20
+        padding: 15
 
         Row {
             spacing: 10
@@ -44,8 +44,9 @@ Rectangle {
                 font.family: smileFont.name
             }
 
-            Button {
-                text: qsTr("添加光源")
+            FluButton {
+                text: qsTr("+")
+                font.pixelSize: 18
                 onClicked: {
                     // 添加新光源时，默认是折叠状态
                     lightSources.append({
@@ -67,11 +68,12 @@ Rectangle {
             width: parent.width
             height: parent.height
             spacing: 10
+            x: 20
             model: ListModel { } // 初始化空模型
             delegate: Rectangle {
                 id: lightItem
-                width: parent.width - 40
-                height: model.expanded ? 150 : 50
+                width: parent.width - 55
+                height: model.expanded ? 180 : 45
                 radius: 5
                 border.color: "#d0d0d0"
                 color: "lightgray"
@@ -86,13 +88,15 @@ Rectangle {
                         width: parent.width - 20
 
                         Text {
+                            x: 1500
                             text: model.name
-                            font.pixelSize: 20
+                            font.pixelSize: 22
                             font.family: smileFont.name
                         }
 
-                        Button {
-                            text: model.expanded ? qsTr("折叠") : qsTr("展开")
+                        FluButton {
+                            text: model.expanded ? qsTr("OPEN") : qsTr("CLOSE")
+                            font.pixelSize: 14
                             onClicked: {
                                 // 更新展开状态
                                 if (lightSources.get(index)) {
@@ -108,8 +112,9 @@ Rectangle {
                             }
                         }
 
-                        Button {
-                            text: qsTr("删除")
+                        FluButton {
+                            text: qsTr("-")
+                            font.pixelSize: 18
                             onClicked: {
                                 // 删除光源前，重新调整光源的序号
                                 if (lightSources.get(index)) {

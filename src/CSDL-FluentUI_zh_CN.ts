@@ -107,36 +107,37 @@
     </message>
     <message>
         <location filename="LightSettings.qml" line="48"/>
-        <source>添加光源</source>
+        <source>+</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="LightSettings.qml" line="95"/>
-        <source>折叠</source>
+        <location filename="LightSettings.qml" line="98"/>
+        <source>OPEN</source>
+        <oldsource>&gt; OPEN</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="LightSettings.qml" line="95"/>
-        <source>展开</source>
+        <location filename="LightSettings.qml" line="98"/>
+        <source>CLOSE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="LightSettings.qml" line="112"/>
-        <source>删除</source>
+        <location filename="LightSettings.qml" line="116"/>
+        <source>-</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="LightSettings.qml" line="143"/>
+        <location filename="LightSettings.qml" line="148"/>
         <source>强度</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="LightSettings.qml" line="194"/>
+        <location filename="LightSettings.qml" line="199"/>
         <source>位置 X</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="LightSettings.qml" line="245"/>
+        <location filename="LightSettings.qml" line="250"/>
         <source>位置 Y</source>
         <translation type="unfinished"></translation>
     </message>
