@@ -15,7 +15,7 @@ Rectangle {
     property real rectHeight: 0 // 矩形高度
 
     property var lightSources: ListModel {
-        ListElement { name: "光源 1"; positionX: 100; positionY: 150; intensity: 50 }
+        ListElement { name: "Light-T8-1"; positionX: 100; positionY: 150; intensity: 50 }
     }
 
     onRectWidthChanged: adjustAxes()
@@ -117,8 +117,8 @@ Rectangle {
 
                     // 绘制光源名称
                     ctx.fillStyle = "#000000";
-                    ctx.font = "10px Arial";
-                    ctx.fillText(source.name, rectXL + 5, rectYL - rectHeightL - 5); // 名称显示在矩形上方
+                    ctx.font = "14px Arial";
+                    ctx.fillText(source.name, rectXL + 58, rectYL - rectHeightL - 5); // 名称显示在矩形上方
                 }
             }
         }
@@ -132,8 +132,7 @@ Rectangle {
             canvas.requestPaint()
         }
         function onDataChanged(start, end, roles) {
-            console.log("Data changed: ", start, end, roles)
-            canvas.requestPaint() // 请求画布重绘
+            canvas.requestPaint()
         }
     }
 }

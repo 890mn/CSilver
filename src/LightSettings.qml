@@ -50,7 +50,7 @@ Rectangle {
                 onClicked: {
                     // 添加新光源时，默认是折叠状态
                     lightSources.append({
-                        "name": "光源 " + (lightSources.count + 1),
+                        "name": "Light-T8-" + (lightSources.count + 1),
                         "intensity": 50,
                         "positionX": 300,
                         "positionY": 200,
@@ -99,7 +99,7 @@ Rectangle {
                                     // 调整序号
                                     for (var i = 0; i < lightSources.count; i++) {
                                         var lightData = lightSources.get(i);
-                                        lightData.name = "光源 " + (i + 1); // 重新设置序号
+                                        lightData.name = "Light-T8-" + (i + 1); // 重新设置序号
                                         lightSources.set(i, lightData); // 更新模型数据
                                     }
                                 }
@@ -147,7 +147,7 @@ Rectangle {
                             width: parent.width
 
                             Text {
-                                text: qsTr("强度")
+                                text: qsTr("照度 Lux")
                                 font.pixelSize: 18
                                 font.family: smileFont.name
                             }
@@ -198,7 +198,7 @@ Rectangle {
                             width: parent.width
 
                             Text {
-                                text: qsTr("位置 X")
+                                text: qsTr("位置 X    ")
                                 font.pixelSize: 18
                                 font.family: smileFont.name
                             }
@@ -249,7 +249,7 @@ Rectangle {
                             width: parent.width
 
                             Text {
-                                text: qsTr("位置 Y")
+                                text: qsTr("位置 Y    ")
                                 font.pixelSize: 18
                                 font.family: smileFont.name
                             }

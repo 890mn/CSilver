@@ -41,26 +41,27 @@
     </message>
     <message>
         <location filename="IndoorEnvironmentModule.qml" line="27"/>
-        <source>       平面宽/高 [%1] x [%2] ( cm )</source>
+        <source>      平面宽/高 [%1] x [%2] ( cm )</source>
+        <oldsource>       平面宽/高 [%1] x [%2] ( cm )</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="IndoorEnvironmentModule.qml" line="54"/>
-        <location filename="IndoorEnvironmentModule.qml" line="100"/>
-        <source>       平面宽/高 [%1] x [%2] ( Unit: cm )</source>
-        <oldsource>       平面 [%1] x [%2] ( Unit: cm )</oldsource>
+        <location filename="IndoorEnvironmentModule.qml" line="55"/>
+        <location filename="IndoorEnvironmentModule.qml" line="102"/>
+        <source>      平面宽/高 [%1] x [%2] ( Unit: cm )</source>
+        <oldsource>       平面宽/高 [%1] x [%2] ( Unit: cm )</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="IndoorEnvironmentModule.qml" line="39"/>
-        <source>  宽度</source>
-        <oldsource>   宽度</oldsource>
+        <location filename="IndoorEnvironmentModule.qml" line="40"/>
+        <source>宽度 X  </source>
+        <oldsource> 宽度 X </oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="IndoorEnvironmentModule.qml" line="85"/>
-        <source>  长度</source>
-        <oldsource>   长度</oldsource>
+        <location filename="IndoorEnvironmentModule.qml" line="87"/>
+        <source>长度 Y  </source>
+        <oldsource> 长度 Y </oldsource>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -123,23 +124,25 @@
     </message>
     <message>
         <location filename="LightSettings.qml" line="110"/>
-        <source>CLOSE  ⮃</source>
-        <oldsource>OPEN  ⮃</oldsource>
+        <source>OPEN   ⮃</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="LightSettings.qml" line="150"/>
-        <source>强度</source>
+        <source>照度 Lux</source>
+        <oldsource>照度 Lm</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="LightSettings.qml" line="201"/>
-        <source>位置 X</source>
+        <source>位置 X    </source>
+        <oldsource>位置 X   </oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="LightSettings.qml" line="252"/>
-        <source>位置 Y</source>
+        <source>位置 Y    </source>
+        <oldsource>位置 Y   </oldsource>
         <translation type="unfinished"></translation>
     </message>
 </context>

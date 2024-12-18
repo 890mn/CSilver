@@ -24,10 +24,10 @@ Rectangle {
 
         Text {
             id: simulationData
-            text: qsTr("       平面宽/高 [%1] x [%2] ( cm )").arg(sliderWidth.value.toFixed(0)).arg(sliderHeight.value.toFixed(0))
+            text: qsTr("      平面宽/高 [%1] x [%2] ( cm )").arg(sliderWidth.value.toFixed(0)).arg(sliderHeight.value.toFixed(0))
             font.pixelSize: 24
             font.family: smileFont.name
-            height: 40
+            height: 35
         }
 
         // 宽度滑块
@@ -36,7 +36,8 @@ Rectangle {
             width: parent.width
 
             Text {
-                text: qsTr("  宽度")
+                y: 3
+                text: qsTr("宽度 X  ")
                 font.pixelSize: 20
                 font.family: smileFont.name
                 width: 40
@@ -51,7 +52,7 @@ Rectangle {
                 to: 6400
                 value: 300
                 onValueChanged: {
-                    simulationData.text = qsTr("       平面宽/高 [%1] x [%2] ( Unit: cm )").arg(value.toFixed(0)).arg(sliderHeight.value.toFixed(0));
+                    simulationData.text = qsTr("      平面宽/高 [%1] x [%2] ( Unit: cm )").arg(value.toFixed(0)).arg(sliderHeight.value.toFixed(0));
                     simulationCanvas.updateRectangle(value, sliderHeight.value);
                     textFieldWidth.text = value.toFixed(0);
                 }
@@ -82,7 +83,8 @@ Rectangle {
             width: parent.width
 
             Text {
-                text: qsTr("  长度")
+                y: 3
+                text: qsTr("长度 Y  ")
                 font.pixelSize: 20
                 font.family: smileFont.name
                 width: 40
@@ -97,7 +99,7 @@ Rectangle {
                 to: 6400
                 value: 200
                 onValueChanged: {
-                    simulationData.text = qsTr("       平面宽/高 [%1] x [%2] ( Unit: cm )").arg(sliderWidth.value.toFixed(0)).arg(value.toFixed(0));
+                    simulationData.text = qsTr("      平面宽/高 [%1] x [%2] ( Unit: cm )").arg(sliderWidth.value.toFixed(0)).arg(value.toFixed(0));
                     simulationCanvas.updateRectangle(sliderWidth.value, value);
                     textFieldHeight.text = value.toFixed(0);
                 }
