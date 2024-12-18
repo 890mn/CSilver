@@ -22,7 +22,7 @@ Rectangle {
         // 计算每个光源的高度
         for (var i = 0; i < lightSources.count; i++) {
             var item = lightSources.get(i);
-            totalHeight += item.expanded ? 180 : 45; // 展开状态光源占 160 高度，折叠状态占 50 高度
+            totalHeight += item.expanded ? 180 : 50; // 展开状态光源占 160 高度，折叠状态占 50 高度
         }
 
         // 设置新的高度（保持最小为 100，避免高度小于初始值）
@@ -68,12 +68,11 @@ Rectangle {
             width: parent.width
             height: parent.height
             spacing: 10
-            x: 20
             model: ListModel { } // 初始化空模型
             delegate: Rectangle {
                 id: lightItem
-                width: parent.width - 55
-                height: model.expanded ? 180 : 45
+                width: parent.width - 30
+                height: model.expanded ? 180 : 50
                 radius: 5
                 border.color: "#d0d0d0"
                 color: "lightgray"
@@ -86,31 +85,6 @@ Rectangle {
                     Row {
                         spacing: 10
                         width: parent.width - 20
-
-                        Text {
-                            x: 1500
-                            text: model.name
-                            font.pixelSize: 22
-                            font.family: smileFont.name
-                        }
-
-                        FluButton {
-                            text: model.expanded ? qsTr("OPEN") : qsTr("CLOSE")
-                            font.pixelSize: 14
-                            onClicked: {
-                                // 更新展开状态
-                                if (lightSources.get(index)) {
-                                    lightSources.set(index, {
-                                        name: model.name,
-                                        intensity: model.intensity,
-                                        positionX: model.positionX,
-                                        positionY: model.positionY,
-                                        expanded: !model.expanded
-                                    });
-                                    updateHeight(); // 更新外框高度
-                                }
-                            }
-                        }
 
                         FluButton {
                             text: qsTr("-")
@@ -131,6 +105,33 @@ Rectangle {
                                 }
                             }
                         }
+
+                        Text {
+                            x: 30
+                            y: 1
+                            text: model.name
+                            font.pixelSize: 23
+                            font.family: smileFont.name
+                        }
+
+                        FluButton {
+                            x: parent.width - 40
+                            text: model.expanded ? qsTr("◸") : qsTr("◿")
+                            font.pixelSize: 18
+                            onClicked: {
+                                // 更新展开状态
+                                if (lightSources.get(index)) {
+                                    lightSources.set(index, {
+                                        name: model.name,
+                                        intensity: model.intensity,
+                                        positionX: model.positionX,
+                                        positionY: model.positionY,
+                                        expanded: !model.expanded
+                                    });
+                                    updateHeight(); // 更新外框高度
+                                }
+                            }
+                        }
                     }
 
                     // Expanded content: 使用 Column 来排列属性
@@ -138,6 +139,7 @@ Rectangle {
                         visible: model.expanded
                         spacing: 10
                         width: parent.width
+                        y: 10
 
                         // 强度调整
                         Row {

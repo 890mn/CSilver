@@ -111,33 +111,33 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="LightSettings.qml" line="98"/>
-        <source>OPEN</source>
-        <oldsource>&gt; OPEN</oldsource>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="LightSettings.qml" line="98"/>
-        <source>CLOSE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="LightSettings.qml" line="116"/>
+        <location filename="LightSettings.qml" line="90"/>
         <source>-</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="LightSettings.qml" line="148"/>
+        <location filename="LightSettings.qml" line="119"/>
+        <source>◸</source>
+        <oldsource>⇱</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="LightSettings.qml" line="119"/>
+        <source>◿</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="LightSettings.qml" line="150"/>
         <source>强度</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="LightSettings.qml" line="199"/>
+        <location filename="LightSettings.qml" line="201"/>
         <source>位置 X</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="LightSettings.qml" line="250"/>
+        <location filename="LightSettings.qml" line="252"/>
         <source>位置 Y</source>
         <translation type="unfinished"></translation>
     </message>
