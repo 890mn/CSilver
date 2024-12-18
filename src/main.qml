@@ -13,6 +13,7 @@ FluWindow {
     property color globalTextColor: "black" // 更改文本颜色以适应白色背景
     property color cosFTextColor: Qt.rgba(87/255,151/255,180/255,255/255)
     property color cosSTextColor: Qt.rgba(43/255,186/255,180/255,255/255)
+    property color cosTTextColor: Qt.rgba(143/255,16/255,180/255,205/255)
 
     FontLoader {
         id: brushFont

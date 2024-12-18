@@ -102,12 +102,13 @@ Rectangle {
                 ctx.strokeRect(rectX, rectY, scaledWidth, scaledHeight);
             }
 
+            // 绘制 lightSources 光源
             for (let k = 0; k < lightSources.count; k++) {
                 const source = lightSources.get(k);
 
-                // 绘制光源矩形条
+                // 使用不同的颜色或样式
                 ctx.fillStyle = "#FFFFFF"; // 光源条颜色
-                ctx.strokeStyle = cosSTextColor; // 光源边框颜色
+                ctx.strokeStyle = cosSTextColor; // 红色边框，区分光源类型
                 ctx.lineWidth = 2;
 
                 if (source && source.positionX !== undefined && source.positionY !== undefined) {
@@ -126,8 +127,48 @@ Rectangle {
                     ctx.fillText(source.name, rectXL + 58, rectYL - rectHeightL - 5); // 名称显示在矩形上方
                 }
             }
+
+            // 绘制 addSources 光源
+            for (let l = 0; l < addSources.count; l++) {
+                const sourceA = addSources.get(l);
+
+                // 绘制光源矩形条
+                ctx.fillStyle = "#FFFFFF"; // 光源条颜色
+                ctx.strokeStyle = cosTTextColor; // 光源边框颜色
+                ctx.lineWidth = 2;
+
+                if (sourceA && sourceA.positionX !== undefined && sourceA.positionY !== undefined) {
+                    const rectXA = padding + (sourceA.positionX / maxX) * axisWidth;
+                    const rectYA = height - padding - (sourceA.positionY / maxY) * axisHeight;
+                    const rectWidthA = 50; // 固定宽度
+                    const rectHeightA = 10; // 固定高度
+
+                    // 绘制光源矩形条
+                    ctx.fillRect(rectXA, rectYA - rectHeightA, rectWidthA, rectHeightA);
+                    ctx.strokeRect(rectXA, rectYA - rectHeightA, rectWidthA, rectHeightA);
+
+                    // 绘制光源名称
+                    ctx.fillStyle = "#000000";
+                    ctx.font = "14px Arial";
+                    ctx.fillText(sourceA.name, rectXA + 58, rectYA - rectHeightA - 5); // 名称显示在矩形上方
+                }
+            }
         }
     }
+
+    Connections {
+        target: addSources
+        function onRowsInserted(parent, first, last) {
+            canvas.requestPaint()
+        }
+        function onRowsRemoved(parent, first, last) {
+            canvas.requestPaint()
+        }
+        function onDataChanged(start, end, roles) {
+            canvas.requestPaint()
+        }
+    }
+
     Connections {
         target: lightSources
         function onRowsInserted(parent, first, last) {

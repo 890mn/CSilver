@@ -15,27 +15,27 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="AddSettings.qml" line="95"/>
+        <location filename="AddSettings.qml" line="94"/>
         <source>-</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="AddSettings.qml" line="115"/>
+        <location filename="AddSettings.qml" line="114"/>
         <source>CLOSE  ⮃</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="AddSettings.qml" line="115"/>
+        <location filename="AddSettings.qml" line="114"/>
         <source>OPEN   ⮃</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="AddSettings.qml" line="155"/>
+        <location filename="AddSettings.qml" line="153"/>
         <source>位置 X    </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="AddSettings.qml" line="206"/>
+        <location filename="AddSettings.qml" line="203"/>
         <source>位置 Y    </source>
         <translation type="unfinished"></translation>
     </message>

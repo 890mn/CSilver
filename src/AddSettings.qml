@@ -54,7 +54,6 @@ Rectangle {
                         // 添加新光源时，默认是折叠状态
                         addSources.append({
                             "name": "Sensor-" + (addSources.count + 1),
-                            "intensity": 50,
                             "positionX": 250,
                             "positionY": 200,
                             "expanded": false // 默认折叠
@@ -79,7 +78,7 @@ Rectangle {
                 height: model.expanded ? 140 : 50
                 radius: 5
                 border.width: 2
-                border.color: cosSTextColor
+                border.color: cosTTextColor
                 color: "transparent"
 
                 Column {
@@ -120,7 +119,6 @@ Rectangle {
                                 if (addSources.get(index)) {
                                     addSources.set(index, {
                                         name: model.name,
-                                        intensity: model.intensity,
                                         positionX: model.positionX,
                                         positionY: model.positionY,
                                         expanded: !model.expanded
@@ -170,7 +168,6 @@ Rectangle {
                                         addData.positionX = value;
                                         addSources.set(index, {
                                             name: addData.name,
-                                            intensity: addData.intensity,
                                             positionX: addData.positionX,
                                             positionY: addData.positionY,
                                             expanded: addData.expanded
@@ -221,7 +218,6 @@ Rectangle {
                                         addData.positionY = value;
                                         addSources.set(index, {
                                             name: addData.name,
-                                            intensity: addData.intensity,
                                             positionX: addData.positionX,
                                             positionY: addData.positionY,
                                             expanded: addData.expanded
