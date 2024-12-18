@@ -11,8 +11,8 @@ Rectangle {
     property real maxX: 600 // 最大 X 轴刻度
     property real maxY: 400 // 最大 Y 轴刻度
 
-    property real rectWidth: 0 // 矩形宽度
-    property real rectHeight: 0 // 矩形高度
+    property real rectWidth: 500 // 矩形宽度
+    property real rectHeight: 300 // 矩形高度
 
     property var lightSources: ListModel {
         ListElement { name: "Light-T8-1"; positionX: 100; positionY: 150; intensity: 50 }
@@ -98,13 +98,14 @@ Rectangle {
                 ctx.strokeRect(rectX, rectY, scaledWidth, scaledHeight);
             }
 
-            // 绘制光源矩形条
-            ctx.fillStyle = "#4285F4"; // 光源条颜色
-            ctx.strokeStyle = "#0057E7"; // 光源边框颜色
-            ctx.lineWidth = 2;
-
             for (let k = 0; k < lightSources.count; k++) {
                 const source = lightSources.get(k);
+
+                // 绘制光源矩形条
+                ctx.fillStyle = "#FFFFFF"; // 光源条颜色
+                ctx.strokeStyle = cosSTextColor; // 光源边框颜色
+                ctx.lineWidth = 2;
+
                 if (source && source.positionX !== undefined && source.positionY !== undefined) {
                     const rectXL = padding + (source.positionX / maxX) * axisWidth;
                     const rectYL = height - padding - (source.positionY / maxY) * axisHeight;

@@ -22,7 +22,7 @@ Rectangle {
         // 计算每个光源的高度
         for (var i = 0; i < lightSources.count; i++) {
             var item = lightSources.get(i);
-            totalHeight += item.expanded ? 180 : 50; // 展开状态光源占 160 高度，折叠状态占 50 高度
+            totalHeight += item.expanded ? 180 : 50; // 展开状态光源占 180 高度，折叠状态占 50 高度
         }
 
         // 设置新的高度（保持最小为 100，避免高度小于初始值）
@@ -52,8 +52,8 @@ Rectangle {
                     lightSources.append({
                         "name": "Light-T8-" + (lightSources.count + 1),
                         "intensity": 50,
-                        "positionX": 300,
-                        "positionY": 200,
+                        "positionX": 250,
+                        "positionY": 150,
                         "expanded": false // 默认折叠
                     });
 
@@ -74,8 +74,9 @@ Rectangle {
                 width: parent.width - 30
                 height: model.expanded ? 180 : 50
                 radius: 5
-                border.color: "#d0d0d0"
-                color: "lightgray"
+                border.width: 2
+                border.color: cosSTextColor
+                color: "transparent"
 
                 Column {
                     anchors.fill: parent
