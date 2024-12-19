@@ -181,4 +181,17 @@ Rectangle {
             canvas.requestPaint()
         }
     }
+
+    Connections {
+        target: mainWindow
+        function onCosFTextColorChanged() {
+            canvas.requestPaint()
+        }
+        function onCosSTextColorChanged() {
+            canvas.requestPaint()
+        }
+        function onCosTTextColorChanged() {
+            canvas.requestPaint()
+        }
+    }
 }

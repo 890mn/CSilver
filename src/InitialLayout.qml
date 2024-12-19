@@ -20,7 +20,7 @@ Item {
         anchors.leftMargin: 10
         spacing: 15
         anchors.verticalCenter: parent.verticalCenter
-        anchors.verticalCenterOffset: 100 // 调整竖向 offset
+        anchors.verticalCenterOffset: 100
 
         opacity: 1
 
@@ -75,8 +75,7 @@ Item {
             }
             FluSheet {
                 id:sheet
-                title: qsTr("Setting")
-                size: 400 // Height
+                size: 450 // Height
 
                 Column {
                     width: parent.width
@@ -85,6 +84,151 @@ Item {
                     spacing: 10
                     padding: 10
 
+                    // Global
+                    FluText {
+                        y: 10
+                        text: qsTr("软件环境设置")
+                        font.family: smileFont.name
+                        font.pixelSize: 23
+                    }
+
+                    Row {
+                        width: parent.width
+
+                        spacing: 20
+                        padding: 5
+                        x: 15
+
+                        FluText {
+                            text: qsTr("- CSilver 软件最小宽度 / 长度 [不建议小于默认数值]")
+                            font.family: smileFont.name
+                            font.pixelSize: 21
+                        }
+
+                        FluTextBox {
+                            text: mainWindow.minimumWidth.toFixed(0)
+                            font.pixelSize: 16
+                            font.family: smileFont.name
+                            width: 80
+                            height: 30
+                            y: -2
+                            inputMethodHints: Qt.ImhDigitsOnly
+
+                            onEditingFinished: {
+                                let newValue = parseInt(text);
+                                if (!isNaN(newValue) && newValue > 0 && newValue < mainWindow.maximumWidth) {
+                                    mainWindow.minimumWidth = newValue;
+                                } else {
+                                    text = mainWindow.minimumWidth;
+                                }
+                            }
+
+                            Keys.onReturnPressed: {
+                                let newValue = parseInt(text);
+                                if (!isNaN(newValue) && newValue > 0 && newValue < mainWindow.maximumWidth) {
+                                    mainWindow.minimumWidth = newValue;
+                                } else {
+                                    text = mainWindow.minimumWidth;
+                                }
+                            }
+                        }
+
+                        FluText {
+                            text: qsTr("X")
+                            font.family: smileFont.name
+                            font.pixelSize: 21
+                        }
+
+                        FluTextBox {
+                            text: mainWindow.minimumHeight.toFixed(0)
+                            font.pixelSize: 16
+                            font.family: smileFont.name
+                            width: 80
+                            height: 30
+                            y: -2
+                            inputMethodHints: Qt.ImhDigitsOnly
+
+                            onEditingFinished: {
+                                let newValue = parseInt(text);
+                                if (!isNaN(newValue) && newValue > 0 && newValue <= mainWindow.maximumHeight) {
+                                    mainWindow.minimumHeight = newValue;
+                                } else {
+                                    text = mainWindow.minimumHeight;
+                                }
+                            }
+
+                            Keys.onReturnPressed: {
+                                let newValue = parseInt(text);
+                                if (!isNaN(newValue) && newValue > 0 && newValue <= mainWindow.maximumHeight) {
+                                    mainWindow.minimumHeight = newValue;
+                                } else {
+                                    text = mainWindow.minimumHeight;
+                                }
+                            }
+                        }
+                    }
+
+                    Row {
+                        width: parent.width
+
+                        spacing: 20
+                        padding: 5
+                        x: 15
+
+                        FluText {
+                            text: qsTr("- 坐标轴 / 室内设定 颜色设置")
+                            font.family: smileFont.name
+                            font.pixelSize: 21
+                        }
+
+                        FluColorPicker{
+                            onAccepted: {
+                                mainWindow.cosFTextColor = current
+                            }
+                        }
+                    }
+
+                    Row {
+                        width: parent.width
+
+                        spacing: 20
+                        padding: 5
+                        x: 15
+
+                        FluText {
+                            text: qsTr("- 光源 颜色设置")
+                            font.family: smileFont.name
+                            font.pixelSize: 21
+                        }
+
+                        FluColorPicker{
+                            onAccepted: {
+                                mainWindow.cosSTextColor = current
+                            }
+                        }
+                    }
+
+                    Row {
+                        width: parent.width
+
+                        spacing: 20
+                        padding: 5
+                        x: 15
+
+                        FluText {
+                            text: qsTr("- 传感 颜色设置")
+                            font.family: smileFont.name
+                            font.pixelSize: 21
+                        }
+
+                        FluColorPicker{
+                            onAccepted: {
+                                mainWindow.cosTTextColor = current
+                            }
+                        }
+                    }
+
+                    // Simulation
                     FluText {
                         y: 10
                         text: qsTr("仿真环境设置")
@@ -96,7 +240,8 @@ Item {
                         width: parent.width
 
                         spacing: 20
-                        padding: 10
+                        padding: 5
+                        x: 15
 
                         FluText {
                             text: qsTr("- 是否开启竖向滑块？[建议：在多光源或传感存在时打开，默认关闭]")
@@ -116,7 +261,8 @@ Item {
                         width: parent.width
 
                         spacing: 20
-                        padding: 10
+                        padding: 5
+                        x: 15
 
                         FluText {
                             text: qsTr("- 光源数量限制 [Default: 8] [注:不建议新设定数值小于原数量，该行为将引发未定义事件]")
@@ -157,7 +303,8 @@ Item {
                         width: parent.width
 
                         spacing: 20
-                        padding: 10
+                        padding: 5
+                        x: 15
 
                         FluText {
                             text: qsTr("- 传感数量限制 [Default: 8] [注:不建议新设定数值小于原数量，该行为将引发未定义事件]")
@@ -198,7 +345,6 @@ Item {
         }
     }
 
-    // 下方区域，右边内容
     Row {
         anchors{
             bottom: parent.bottom
