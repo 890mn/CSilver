@@ -7,6 +7,7 @@ import FluentUI 1.0
 Item {
     signal startSimulation()
 
+    property bool horOn: false
     property bool verOn: false
 
     Column {
@@ -89,22 +90,52 @@ Item {
 
                     Row {
                         width: parent.width
-                        height: parent.height
+                        //height: parent.height
 
                         spacing: 20
                         padding: 10
 
-                        FluText{
+                        FluText {
                             text: qsTr("- 是否开启竖向滑块？[建议：在多光源或传感存在时打开，默认关闭]")
                             font.family: smileFont.name
                             font.pixelSize: 21
                         }
 
-                        FluToggleSwitch{
+                        FluToggleSwitch {
                             y: 4
                             onClicked: {
                                 verOn = !verOn
-                                console.log(verOn)
+                            }
+                        }
+                    }
+
+                    Row {
+                        width: parent.width
+                        //height: parent.height
+
+                        spacing: 20
+                        padding: 10
+
+                        FluText {
+                            text: qsTr("- 光源数量限制 [Default: 8]")
+                            font.family: smileFont.name
+                            font.pixelSize: 21
+                        }
+
+                        FluTextBox {
+                            //text: intensitySlider.value.toFixed(0)
+                            font.pixelSize: 16
+                            font.family: smileFont.name
+                            //width: 80
+                            //height: 30
+                            inputMethodHints: Qt.ImhDigitsOnly
+                            onEditingFinished: {
+                                let newValue = parseInt(text);
+                                if (!isNaN(newValue) && newValue >= 0 && newValue <= 32) {
+                                    lightSettings.maxLights = newValue;
+                                } else {
+                                    text = lightSettings.maxLights;
+                                }
                             }
                         }
                     }

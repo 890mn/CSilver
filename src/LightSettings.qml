@@ -260,12 +260,15 @@ Rectangle {
                             }
 
                             FluTextBox {
+                                id: positionYTextBox
                                 text: positionYSlider.value.toFixed(0)
                                 font.pixelSize: 16
                                 font.family: smileFont.name
                                 width: 80
                                 height: 30
                                 inputMethodHints: Qt.ImhDigitsOnly
+
+                                // 处理文本框失去焦点或用户点击外部区域时的回调
                                 onEditingFinished: {
                                     let newValue = parseInt(text);
                                     if (!isNaN(newValue) && newValue >= positionYSlider.from && newValue <= positionYSlider.to) {
@@ -274,7 +277,18 @@ Rectangle {
                                         text = positionYSlider.value.toFixed(0);
                                     }
                                 }
+
+                                // 处理按下 Enter 键时的回调
+                                Keys.onReturnPressed: {
+                                    let newValue = parseInt(text);
+                                    if (!isNaN(newValue) && newValue >= positionYSlider.from && newValue <= positionYSlider.to) {
+                                        positionYSlider.value = newValue;
+                                    } else {
+                                        text = positionYSlider.value.toFixed(0);
+                                    }
+                                }
                             }
+
                         }
                     }
                 }

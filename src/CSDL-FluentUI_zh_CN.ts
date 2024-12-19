@@ -98,48 +98,54 @@
 <context>
     <name>InitialLayout</name>
     <message>
-        <location filename="InitialLayout.qml" line="23"/>
+        <location filename="InitialLayout.qml" line="24"/>
         <source>仿真 · 照度模拟</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="InitialLayout.qml" line="31"/>
+        <location filename="InitialLayout.qml" line="32"/>
         <source>调控算法验证平台 |</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="InitialLayout.qml" line="38"/>
+        <location filename="InitialLayout.qml" line="39"/>
         <source> Powered By Qt6</source>
         <oldsource> Powered By Qt6 / FluentUI</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="InitialLayout.qml" line="51"/>
+        <location filename="InitialLayout.qml" line="52"/>
         <source>开始仿真 / Start</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="InitialLayout.qml" line="62"/>
+        <location filename="InitialLayout.qml" line="63"/>
         <source>环境设置 / Setting</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="InitialLayout.qml" line="73"/>
+        <location filename="InitialLayout.qml" line="74"/>
         <source>Setting</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="InitialLayout.qml" line="85"/>
+        <location filename="InitialLayout.qml" line="86"/>
         <source>仿真环境设置</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="InitialLayout.qml" line="98"/>
+        <location filename="InitialLayout.qml" line="99"/>
         <source>- 是否开启竖向滑块？[建议：在多光源或传感存在时打开，默认关闭]</source>
+        <oldsource>- 是否开启水平滑块？[建议：在多光源或传感存在时打开，默认关闭]</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="InitialLayout.qml" line="128"/>
+        <location filename="InitialLayout.qml" line="120"/>
+        <source>- 光源数量限制 [Default: 8]</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="InitialLayout.qml" line="159"/>
         <source>愿你在仿真的世界沐浴五束阳光 |</source>
         <translation type="unfinished"></translation>
     </message>
