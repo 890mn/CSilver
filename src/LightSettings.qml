@@ -312,4 +312,10 @@ Rectangle {
             }
         }
     }
+    Connections {
+        target: initialLayout
+        function onMaxLightChanged() {
+            addButton_Light.enabled = true
+        }
+    }
 }

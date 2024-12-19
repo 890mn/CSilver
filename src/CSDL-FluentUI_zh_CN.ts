@@ -145,7 +145,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="InitialLayout.qml" line="174"/>
+        <location filename="InitialLayout.qml" line="172"/>
         <source>愿你在仿真的世界沐浴五束阳光 |</source>
         <translation type="unfinished"></translation>
     </message>

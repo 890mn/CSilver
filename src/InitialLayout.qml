@@ -126,11 +126,11 @@ Item {
                         }
 
                         FluTextBox {
-                            //text: intensitySlider.value.toFixed(0)
+                            text: maxLight.toFixed(0)
                             font.pixelSize: 16
                             font.family: smileFont.name
-                            //width: 80
-                            //height: 30
+                            width: 80
+                            height: 30
                             inputMethodHints: Qt.ImhDigitsOnly
 
                             onEditingFinished: {
@@ -140,7 +140,6 @@ Item {
                                 } else {
                                     text = maxLight;
                                 }
-                                plusOn = true
                             }
 
                             Keys.onReturnPressed: {
@@ -150,7 +149,6 @@ Item {
                                 } else {
                                     text = maxLight;
                                 }
-                                plusOn = true
                             }
                         }
                     }
