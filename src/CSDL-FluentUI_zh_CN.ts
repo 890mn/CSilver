@@ -202,7 +202,6 @@
     <message>
         <location filename="LightSettings.qml" line="112"/>
         <source>CLOSE  ⮃</source>
-        <oldsource>CLOSE ⮃</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
