@@ -12,6 +12,7 @@ Item {
     property bool verOn: false
 
     property int maxLight: 8
+    property int maxSensor: 8
 
     Column {
         id: mainState
@@ -93,7 +94,6 @@ Item {
 
                     Row {
                         width: parent.width
-                        //height: parent.height
 
                         spacing: 20
                         padding: 10
@@ -114,7 +114,6 @@ Item {
 
                     Row {
                         width: parent.width
-                        //height: parent.height
 
                         spacing: 20
                         padding: 10
@@ -149,6 +148,47 @@ Item {
                                     maxLight = newValue;
                                 } else {
                                     text = maxLight;
+                                }
+                            }
+                        }
+                    }
+
+                    Row {
+                        width: parent.width
+
+                        spacing: 20
+                        padding: 10
+
+                        FluText {
+                            text: qsTr("- 传感数量限制 [Default: 8] [注:不建议新设定数值小于原数量，该行为将引发未定义事件]")
+                            font.family: smileFont.name
+                            font.pixelSize: 21
+                        }
+
+                        FluTextBox {
+                            text: maxSensor.toFixed(0)
+                            font.pixelSize: 16
+                            font.family: smileFont.name
+                            width: 70
+                            height: 30
+                            y: -2
+                            inputMethodHints: Qt.ImhDigitsOnly
+
+                            onEditingFinished: {
+                                let newValue = parseInt(text);
+                                if (!isNaN(newValue) && newValue >= 0 && newValue <= 32) {
+                                    maxSensor = newValue;
+                                } else {
+                                    text = maxSensor;
+                                }
+                            }
+
+                            Keys.onReturnPressed: {
+                                let newValue = parseInt(text);
+                                if (!isNaN(newValue) && newValue >= 0 && newValue <= 32) {
+                                    maxSensor = newValue;
+                                } else {
+                                    text = maxSensor;
                                 }
                             }
                         }

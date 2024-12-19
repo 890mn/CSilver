@@ -10,7 +10,6 @@ Rectangle {
     border.color: "#a0a0a0"
     color: "white"
 
-    property int maxSensor: 8
     property alias sensorListModel: sensorListView.model
 
     Component.onCompleted: {
@@ -44,11 +43,11 @@ Rectangle {
             }
 
             FluButton {
-                id: addButton_Add
+                id: addButton_Sensor
                 text: qsTr("+")
                 font.pixelSize: 18
                 onClicked: {
-                    if (sensorListModel.count < maxSensor) {
+                    if (sensorListModel.count < initialLayout.maxSensor) {
                         sensorListModel.append({
                             "name": "Sensor-" + (sensorListModel.count + 1),
                             "positionX": 250,
@@ -56,11 +55,11 @@ Rectangle {
                             "expanded": false // 默认折叠
                         });
                         updateHeight();
-                        if (sensorListModel.count === maxSensor) {
-                            addButton_Add.enabled = false
+                        if (sensorListModel.count === initialLayout.maxSensor) {
+                            addButton_Sensor.enabled = false
                         }
                     } else {
-                        addButton_Add.enabled = false
+                        addButton_Sensor.enabled = false
                     }
                 }
             }
@@ -94,8 +93,8 @@ Rectangle {
                             text: qsTr("-")
                             font.pixelSize: 18
                             onClicked: {
-                                if (sensorListModel.count === maxSensor) {
-                                    addButton_Add.enabled = true
+                                if (sensorListModel.count === initialLayout.maxSensor) {
+                                    addButton_Sensor.enabled = true
                                 }
 
                                 if (sensorListModel.get(index)) {
@@ -265,6 +264,12 @@ Rectangle {
                     }
                 }
             }
+        }
+    }
+    Connections {
+        target: initialLayout
+        function onMaxSensorChanged() {
+            addButton_Sensor.enabled = true
         }
     }
 }

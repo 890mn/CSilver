@@ -4,37 +4,37 @@
 <context>
     <name>AddSettings</name>
     <message>
-        <location filename="AddSettings.qml" line="41"/>
+        <location filename="AddSettings.qml" line="40"/>
         <source>传感器设置</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="AddSettings.qml" line="48"/>
+        <location filename="AddSettings.qml" line="47"/>
         <source>+</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="AddSettings.qml" line="94"/>
+        <location filename="AddSettings.qml" line="93"/>
         <source>-</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="AddSettings.qml" line="115"/>
+        <location filename="AddSettings.qml" line="114"/>
         <source>CLOSE  ⮃</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="AddSettings.qml" line="115"/>
+        <location filename="AddSettings.qml" line="114"/>
         <source>OPEN   ⮃</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="AddSettings.qml" line="152"/>
+        <location filename="AddSettings.qml" line="151"/>
         <source>位置 X    </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="AddSettings.qml" line="212"/>
+        <location filename="AddSettings.qml" line="211"/>
         <source>位置 Y    </source>
         <translation type="unfinished"></translation>
     </message>
@@ -98,38 +98,38 @@
 <context>
     <name>InitialLayout</name>
     <message>
-        <location filename="InitialLayout.qml" line="27"/>
+        <location filename="InitialLayout.qml" line="28"/>
         <source>仿真 · 照度模拟</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="InitialLayout.qml" line="35"/>
+        <location filename="InitialLayout.qml" line="36"/>
         <source>调控算法验证平台 |</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="InitialLayout.qml" line="42"/>
+        <location filename="InitialLayout.qml" line="43"/>
         <source> Powered By Qt6</source>
         <oldsource> Powered By Qt6 / FluentUI</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="InitialLayout.qml" line="55"/>
+        <location filename="InitialLayout.qml" line="56"/>
         <source>开始仿真 / Start</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="InitialLayout.qml" line="66"/>
+        <location filename="InitialLayout.qml" line="67"/>
         <source>环境设置 / Setting</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="InitialLayout.qml" line="77"/>
+        <location filename="InitialLayout.qml" line="78"/>
         <source>Setting</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="InitialLayout.qml" line="89"/>
+        <location filename="InitialLayout.qml" line="90"/>
         <source>仿真环境设置</source>
         <translation type="unfinished"></translation>
     </message>
@@ -140,13 +140,18 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="InitialLayout.qml" line="123"/>
+        <location filename="InitialLayout.qml" line="122"/>
         <source>- 光源数量限制 [Default: 8] [注:不建议新设定数值小于原数量，该行为将引发未定义事件]</source>
         <oldsource>- 光源数量限制 [Default: 8]</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="InitialLayout.qml" line="173"/>
+        <location filename="InitialLayout.qml" line="163"/>
+        <source>- 传感数量限制 [Default: 8] [注:不建议新设定数值小于原数量，该行为将引发未定义事件]</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="InitialLayout.qml" line="213"/>
         <source>愿你在仿真的世界沐浴五束阳光 |</source>
         <translation type="unfinished"></translation>
     </message>
