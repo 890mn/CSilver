@@ -26,7 +26,7 @@ Item {
 
         FluText {
             text: qsTr("仿真 · 照度模拟")
-            color: cosFTextColor
+            color: Qt.rgba(87/255,151/255,180/255,255/255)
             font.pixelSize: mainWindow.height / 11
             font.family: smileFont.name
         }
@@ -182,6 +182,8 @@ Item {
                         }
 
                         FluColorPicker{
+                            width: 25
+                            height: 25
                             onAccepted: {
                                 mainWindow.cosFTextColor = current
                             }
@@ -202,6 +204,8 @@ Item {
                         }
 
                         FluColorPicker{
+                            width: 25
+                            height: 25
                             onAccepted: {
                                 mainWindow.cosSTextColor = current
                             }
@@ -222,6 +226,8 @@ Item {
                         }
 
                         FluColorPicker{
+                            width: 25
+                            height: 25
                             onAccepted: {
                                 mainWindow.cosTTextColor = current
                             }
@@ -363,7 +369,7 @@ Item {
             font.family: smileFont.name
             font.bold: true
             text: " CSDLighting-Silver.0.1    "
-            color: cosFTextColor
+            color: Qt.rgba(87/255,151/255,180/255,255/255)
         }
     }
 }

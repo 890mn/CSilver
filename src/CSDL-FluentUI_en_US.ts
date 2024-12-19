@@ -145,39 +145,39 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="InitialLayout.qml" line="199"/>
+        <location filename="InitialLayout.qml" line="201"/>
         <source>- 光源 颜色设置</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="InitialLayout.qml" line="219"/>
+        <location filename="InitialLayout.qml" line="223"/>
         <source>- 传感 颜色设置</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="InitialLayout.qml" line="234"/>
+        <location filename="InitialLayout.qml" line="240"/>
         <source>仿真环境设置</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="InitialLayout.qml" line="247"/>
+        <location filename="InitialLayout.qml" line="253"/>
         <source>- 是否开启竖向滑块？[建议：在多光源或传感存在时打开，默认关闭]</source>
         <oldsource>- 是否开启水平滑块？[建议：在多光源或传感存在时打开，默认关闭]</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="InitialLayout.qml" line="268"/>
+        <location filename="InitialLayout.qml" line="274"/>
         <source>- 光源数量限制 [Default: 8] [注:不建议新设定数值小于原数量，该行为将引发未定义事件]</source>
         <oldsource>- 光源数量限制 [Default: 8]</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="InitialLayout.qml" line="310"/>
+        <location filename="InitialLayout.qml" line="316"/>
         <source>- 传感数量限制 [Default: 8] [注:不建议新设定数值小于原数量，该行为将引发未定义事件]</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="InitialLayout.qml" line="359"/>
+        <location filename="InitialLayout.qml" line="365"/>
         <source>愿你在仿真的世界沐浴五束阳光 |</source>
         <translation type="unfinished"></translation>
     </message>
