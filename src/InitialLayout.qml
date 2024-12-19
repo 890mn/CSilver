@@ -120,7 +120,7 @@ Item {
                         padding: 10
 
                         FluText {
-                            text: qsTr("- 光源数量限制 [Default: 8]")
+                            text: qsTr("- 光源数量限制 [Default: 8] [注:不建议新设定数值小于原数量，该行为将引发未定义事件]")
                             font.family: smileFont.name
                             font.pixelSize: 21
                         }
@@ -129,8 +129,9 @@ Item {
                             text: maxLight.toFixed(0)
                             font.pixelSize: 16
                             font.family: smileFont.name
-                            width: 80
+                            width: 70
                             height: 30
+                            y: -2
                             inputMethodHints: Qt.ImhDigitsOnly
 
                             onEditingFinished: {

@@ -141,11 +141,12 @@
     </message>
     <message>
         <location filename="InitialLayout.qml" line="123"/>
-        <source>- 光源数量限制 [Default: 8]</source>
+        <source>- 光源数量限制 [Default: 8] [注:不建议新设定数值小于原数量，该行为将引发未定义事件]</source>
+        <oldsource>- 光源数量限制 [Default: 8]</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="InitialLayout.qml" line="172"/>
+        <location filename="InitialLayout.qml" line="173"/>
         <source>愿你在仿真的世界沐浴五束阳光 |</source>
         <translation type="unfinished"></translation>
     </message>
