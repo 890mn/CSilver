@@ -10,24 +10,21 @@ Rectangle {
     border.color: "#a0a0a0"
     color: "white"
 
-    property int maxAdd: 8
+    property int maxSensors: 8
+    property alias sensorListModel: sensorListView.model
 
-    property alias addSources: addList.model
     Component.onCompleted: {
-        simulationCanvas.addSources = addSources; // 绑定外部模型
+        simulationCanvas.addSources = sensorListModel; // 绑定外部模型
     }
 
-    // 计算外框高度的函数
     function updateHeight() {
         var totalHeight = 60;  // 初始高度
 
-        // 计算每个光源的高度
-        for (var i = 0; i < addSources.count; i++) {
-            var item = addSources.get(i);
-            totalHeight += item.expanded ? 150 : 60; // 展开状态光源占 180 高度，折叠状态占 50 高度
+        for (var i = 0; i < sensorListModel.count; i++) {
+            var item = sensorListModel.get(i);
+            totalHeight += item.expanded ? 150 : 60; // 展开状态光源占 150 高度，折叠状态占 60 高度
         }
 
-        // 设置新的高度（保持最小为 100，避免高度小于初始值）
         addSettings.height = totalHeight;
     }
 
@@ -47,33 +44,36 @@ Rectangle {
             }
 
             FluButton {
+                id: addButton_Add
                 text: qsTr("+")
                 font.pixelSize: 18
                 onClicked: {
-                    if (addSources.count < maxAdd) {
-                        // 添加新光源时，默认是折叠状态
-                        addSources.append({
-                            "name": "Sensor-" + (addSources.count + 1),
+                    if (sensorListModel.count < maxSensors) {
+                        sensorListModel.append({
+                            "name": "Sensor-" + (sensorListModel.count + 1),
                             "positionX": 250,
                             "positionY": 200,
                             "expanded": false // 默认折叠
                         });
-
-                        // 更新外框高度
                         updateHeight();
+                        if (sensorListModel.count === maxSensors) {
+                            addButton_Add.enabled = false
+                        }
+                    } else {
+                        addButton_Add.enabled = false
                     }
                 }
             }
         }
 
         ListView {
-            id: addList
+            id: sensorListView
             width: parent.width
             height: parent.height
             spacing: 10
             model: ListModel { } // 初始化空模型
             delegate: Rectangle {
-                id: addItem
+                id: sensorItem
                 width: parent.width - 30
                 height: model.expanded ? 140 : 50
                 radius: 5
@@ -94,17 +94,18 @@ Rectangle {
                             text: qsTr("-")
                             font.pixelSize: 18
                             onClicked: {
-                                // 删除光源前，重新调整光源的序号
-                                if (addSources.get(index)) {
-                                    // 删除当前项
-                                    addSources.remove(index);
-                                    updateHeight(); // 删除光源后更新外框高度
+                                if (sensorListModel.count === 8) {
+                                    addButton_Add.enabled = true
+                                }
 
-                                    // 调整序号
-                                    for (var i = 0; i < addSources.count; i++) {
-                                        var addData = addSources.get(i);
-                                        addData.name = "Sensor-" + (i + 1); // 重新设置序号
-                                        addSources.set(i, addData); // 更新模型数据
+                                if (sensorListModel.get(index)) {
+                                    sensorListModel.remove(index);
+                                    updateHeight();
+
+                                    for (var i = 0; i < sensorListModel.count; i++) {
+                                        var sensorData = sensorListModel.get(i);
+                                        sensorData.name = "Sensor-" + (i + 1);
+                                        sensorListModel.set(i, sensorData);
                                     }
                                 }
                             }
@@ -115,15 +116,14 @@ Rectangle {
                             font.family: smileFont.name
                             font.pixelSize: 16
                             onClicked: {
-                                // 更新展开状态
-                                if (addSources.get(index)) {
-                                    addSources.set(index, {
+                                if (sensorListModel.get(index)) {
+                                    sensorListModel.set(index, {
                                         name: model.name,
                                         positionX: model.positionX,
                                         positionY: model.positionY,
                                         expanded: !model.expanded
                                     });
-                                    updateHeight(); // 更新外框高度
+                                    updateHeight();
                                 }
                             }
                         }
@@ -137,19 +137,18 @@ Rectangle {
                         }
                     }
 
-                    // Expanded content: 使用 Column 来排列属性
                     Column {
                         visible: model.expanded
                         spacing: 10
                         width: parent.width
                         y: 10
 
-                        // 位置 X 调整
                         Row {
                             spacing: 10
                             width: parent.width
 
                             Text {
+                                y: 5
                                 text: qsTr("位置 X    ")
                                 font.pixelSize: 18
                                 font.family: smileFont.name
@@ -163,14 +162,14 @@ Rectangle {
                                 value: model.positionX
 
                                 onValueChanged: {
-                                    let addData = addSources.get(index);
-                                    if (addData) {
-                                        addData.positionX = value;
-                                        addSources.set(index, {
-                                            name: addData.name,
-                                            positionX: addData.positionX,
-                                            positionY: addData.positionY,
-                                            expanded: addData.expanded
+                                    let sensorData = sensorListModel.get(index);
+                                    if (sensorData) {
+                                        sensorData.positionX = value;
+                                        sensorListModel.set(index, {
+                                            name: sensorData.name,
+                                            positionX: sensorData.positionX,
+                                            positionY: sensorData.positionY,
+                                            expanded: sensorData.expanded
                                         });
                                     }
                                 }
@@ -194,12 +193,12 @@ Rectangle {
                             }
                         }
 
-                        // 位置 Y 调整
                         Row {
                             spacing: 10
                             width: parent.width
 
                             Text {
+                                y: 5
                                 text: qsTr("位置 Y    ")
                                 font.pixelSize: 18
                                 font.family: smileFont.name
@@ -213,14 +212,14 @@ Rectangle {
                                 value: model.positionY
 
                                 onValueChanged: {
-                                    let addData = addSources.get(index);
-                                    if (addData) {
-                                        addData.positionY = value;
-                                        addSources.set(index, {
-                                            name: addData.name,
-                                            positionX: addData.positionX,
-                                            positionY: addData.positionY,
-                                            expanded: addData.expanded
+                                    let sensorData = sensorListModel.get(index);
+                                    if (sensorData) {
+                                        sensorData.positionY = value;
+                                        sensorListModel.set(index, {
+                                            name: sensorData.name,
+                                            positionX: sensorData.positionX,
+                                            positionY: sensorData.positionY,
+                                            expanded: sensorData.expanded
                                         });
                                     }
                                 }

@@ -1,8 +1,13 @@
 import QtQuick 2.15
+import QtQuick.Layouts 1.15
+import QtQuick.Window 2.15
+import QtQuick.Controls 2.15
 import FluentUI 1.0
 
 Item {
     signal startSimulation()
+
+    property bool verOn: false
 
     Column {
         id: mainState
@@ -59,6 +64,51 @@ Item {
                 font.family: smileFont.name
                 implicitWidth: font.pixelSize * text.length * 0.6
                 implicitHeight: font.pixelSize * 1.7
+                onClicked: {
+                    sheet.open(FluSheetType.Top)
+                }
+            }
+            FluSheet {
+                id:sheet
+                title: qsTr("Setting")
+                size: 400 // Height
+
+                Column {
+                    width: parent.width
+                    height: parent.height
+
+                    spacing: 10
+                    padding: 10
+
+                    FluText {
+                        y: 10
+                        text: qsTr("仿真环境设置")
+                        font.family: smileFont.name
+                        font.pixelSize: 23
+                    }
+
+                    Row {
+                        width: parent.width
+                        height: parent.height
+
+                        spacing: 20
+                        padding: 10
+
+                        FluText{
+                            text: qsTr("- 是否开启竖向滑块？[建议：在多光源或传感存在时打开，默认关闭]")
+                            font.family: smileFont.name
+                            font.pixelSize: 21
+                        }
+
+                        FluToggleSwitch{
+                            y: 4
+                            onClicked: {
+                                verOn = !verOn
+                                console.log(verOn)
+                            }
+                        }
+                    }
+                }
             }
         }
     }

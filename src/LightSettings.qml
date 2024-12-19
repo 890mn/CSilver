@@ -11,23 +11,18 @@ Rectangle {
     color: "white"
 
     property alias lightSources: lightList.model
+    property int maxLights: 8
+
     Component.onCompleted: {
-        simulationCanvas.lightSources = lightSources; // 绑定外部模型
+        simulationCanvas.lightSources = lightSources;
     }
 
-    property int maxLight: 8
-
-    // 计算外框高度的函数
     function updateHeight() {
-        var totalHeight = 60;  // 初始高度
-
-        // 计算每个光源的高度
+        var totalHeight = 60;
         for (var i = 0; i < lightSources.count; i++) {
             var item = lightSources.get(i);
-            totalHeight += item.expanded ? 190 : 60; // 展开状态光源占 180 高度，折叠状态占 60 高度
+            totalHeight += item.expanded ? 190 : 60;
         }
-
-        // 设置新的高度（保持最小为 100，避免高度小于初始值）
         lightSettings.height = totalHeight;
     }
 
@@ -47,21 +42,24 @@ Rectangle {
             }
 
             FluButton {
+                id: addButton_Light
                 text: qsTr("+")
                 font.pixelSize: 18
                 onClicked: {
-                    if (lightSources.count < maxLight) {
-                        // 添加新光源时，默认是折叠状态
+                    if (lightSources.count < maxLights) {
                         lightSources.append({
                             "name": "Light-T8-" + (lightSources.count + 1),
                             "intensity": 50,
                             "positionX": 250,
                             "positionY": 200,
-                            "expanded": false // 默认折叠
+                            "expanded": false
                         });
-
-                        // 更新外框高度
                         updateHeight();
+                        if (lightSources.count === maxLights) {
+                            addButton_Light.enabled = false
+                        }
+                    } else {
+                        addButton_Light.enabled = false
                     }
                 }
             }
@@ -72,7 +70,7 @@ Rectangle {
             width: parent.width
             height: parent.height
             spacing: 10
-            model: ListModel { } // 初始化空模型
+            model: ListModel { }
             delegate: Rectangle {
                 id: lightItem
                 width: parent.width - 30
@@ -95,17 +93,17 @@ Rectangle {
                             text: qsTr("-")
                             font.pixelSize: 18
                             onClicked: {
-                                // 删除光源前，重新调整光源的序号
-                                if (lightSources.get(index)) {
-                                    // 删除当前项
-                                    lightSources.remove(index);
-                                    updateHeight(); // 删除光源后更新外框高度
+                                if (lightSources.count === 8) {
+                                    addButton_Light.enabled = true
+                                }
 
-                                    // 调整序号
+                                if (lightSources.get(index)) {
+                                    lightSources.remove(index);
+                                    updateHeight();
                                     for (var i = 0; i < lightSources.count; i++) {
                                         var lightData = lightSources.get(i);
-                                        lightData.name = "Light-T8-" + (i + 1); // 重新设置序号
-                                        lightSources.set(i, lightData); // 更新模型数据
+                                        lightData.name = "Light-T8-" + (i + 1);
+                                        lightSources.set(i, lightData);
                                     }
                                 }
                             }
@@ -116,7 +114,6 @@ Rectangle {
                             font.family: smileFont.name
                             font.pixelSize: 16
                             onClicked: {
-                                // 更新展开状态
                                 if (lightSources.get(index)) {
                                     lightSources.set(index, {
                                         name: model.name,
@@ -125,7 +122,7 @@ Rectangle {
                                         positionY: model.positionY,
                                         expanded: !model.expanded
                                     });
-                                    updateHeight(); // 更新外框高度
+                                    updateHeight();
                                 }
                             }
                         }
@@ -139,19 +136,18 @@ Rectangle {
                         }
                     }
 
-                    // Expanded content: 使用 Column 来排列属性
                     Column {
                         visible: model.expanded
                         spacing: 10
                         width: parent.width
                         y: 10
 
-                        // 强度调整
                         Row {
                             spacing: 10
                             width: parent.width
 
                             Text {
+                                y: 5
                                 text: qsTr("照度 Lux")
                                 font.pixelSize: 18
                                 font.family: smileFont.name
@@ -168,13 +164,7 @@ Rectangle {
                                     let lightData = lightSources.get(index);
                                     if (lightData) {
                                         lightData.intensity = value;
-                                        lightSources.set(index, {
-                                            name: lightData.name,
-                                            intensity: lightData.intensity,
-                                            positionX: lightData.positionX,
-                                            positionY: lightData.positionY,
-                                            expanded: lightData.expanded
-                                        });
+                                        lightSources.set(index, lightData);
                                     }
                                 }
                             }
@@ -191,18 +181,18 @@ Rectangle {
                                     if (!isNaN(newValue) && newValue >= intensitySlider.from && newValue <= intensitySlider.to) {
                                         intensitySlider.value = newValue;
                                     } else {
-                                        text = intensitySlider.value.toFixed(0); // 恢复合法值
+                                        text = intensitySlider.value.toFixed(0);
                                     }
                                 }
                             }
                         }
 
-                        // 位置 X 调整
                         Row {
                             spacing: 10
                             width: parent.width
 
                             Text {
+                                y: 5
                                 text: qsTr("位置 X    ")
                                 font.pixelSize: 18
                                 font.family: smileFont.name
@@ -219,13 +209,7 @@ Rectangle {
                                     let lightData = lightSources.get(index);
                                     if (lightData) {
                                         lightData.positionX = value;
-                                        lightSources.set(index, {
-                                            name: lightData.name,
-                                            intensity: lightData.intensity,
-                                            positionX: lightData.positionX,
-                                            positionY: lightData.positionY,
-                                            expanded: lightData.expanded
-                                        });
+                                        lightSources.set(index, lightData);
                                     }
                                 }
                             }
@@ -242,18 +226,18 @@ Rectangle {
                                     if (!isNaN(newValue) && newValue >= positionXSlider.from && newValue <= positionXSlider.to) {
                                         positionXSlider.value = newValue;
                                     } else {
-                                        text = positionXSlider.value.toFixed(0); // 恢复合法值
+                                        text = positionXSlider.value.toFixed(0);
                                     }
                                 }
                             }
                         }
 
-                        // 位置 Y 调整
                         Row {
                             spacing: 10
                             width: parent.width
 
                             Text {
+                                y: 5
                                 text: qsTr("位置 Y    ")
                                 font.pixelSize: 18
                                 font.family: smileFont.name
@@ -270,13 +254,7 @@ Rectangle {
                                     let lightData = lightSources.get(index);
                                     if (lightData) {
                                         lightData.positionY = value;
-                                        lightSources.set(index, {
-                                            name: lightData.name,
-                                            intensity: lightData.intensity,
-                                            positionX: lightData.positionX,
-                                            positionY: lightData.positionY,
-                                            expanded: lightData.expanded
-                                        });
+                                        lightSources.set(index, lightData);
                                     }
                                 }
                             }
@@ -293,7 +271,7 @@ Rectangle {
                                     if (!isNaN(newValue) && newValue >= positionYSlider.from && newValue <= positionYSlider.to) {
                                         positionYSlider.value = newValue;
                                     } else {
-                                        text = positionYSlider.value.toFixed(0); // 恢复合法值
+                                        text = positionYSlider.value.toFixed(0);
                                     }
                                 }
                             }

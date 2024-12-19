@@ -4,13 +4,12 @@
 <context>
     <name>AddSettings</name>
     <message>
-        <location filename="AddSettings.qml" line="44"/>
+        <location filename="AddSettings.qml" line="41"/>
         <source>传感器设置</source>
-        <oldsource>光源设置</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="AddSettings.qml" line="50"/>
+        <location filename="AddSettings.qml" line="48"/>
         <source>+</source>
         <translation type="unfinished"></translation>
     </message>
@@ -20,22 +19,22 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="AddSettings.qml" line="114"/>
+        <location filename="AddSettings.qml" line="115"/>
         <source>CLOSE  ⮃</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="AddSettings.qml" line="114"/>
+        <location filename="AddSettings.qml" line="115"/>
         <source>OPEN   ⮃</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="AddSettings.qml" line="153"/>
+        <location filename="AddSettings.qml" line="152"/>
         <source>位置 X    </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="AddSettings.qml" line="203"/>
+        <location filename="AddSettings.qml" line="202"/>
         <source>位置 Y    </source>
         <translation type="unfinished"></translation>
     </message>
@@ -99,33 +98,48 @@
 <context>
     <name>InitialLayout</name>
     <message>
-        <location filename="InitialLayout.qml" line="18"/>
+        <location filename="InitialLayout.qml" line="23"/>
         <source>仿真 · 照度模拟</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="InitialLayout.qml" line="26"/>
+        <location filename="InitialLayout.qml" line="31"/>
         <source>调控算法验证平台 |</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="InitialLayout.qml" line="33"/>
+        <location filename="InitialLayout.qml" line="38"/>
         <source> Powered By Qt6</source>
         <oldsource> Powered By Qt6 / FluentUI</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="InitialLayout.qml" line="46"/>
+        <location filename="InitialLayout.qml" line="51"/>
         <source>开始仿真 / Start</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="InitialLayout.qml" line="57"/>
+        <location filename="InitialLayout.qml" line="62"/>
         <source>环境设置 / Setting</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="InitialLayout.qml" line="78"/>
+        <location filename="InitialLayout.qml" line="73"/>
+        <source>Setting</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="InitialLayout.qml" line="85"/>
+        <source>仿真环境设置</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="InitialLayout.qml" line="98"/>
+        <source>- 是否开启竖向滑块？[建议：在多光源或传感存在时打开，默认关闭]</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="InitialLayout.qml" line="128"/>
         <source>愿你在仿真的世界沐浴五束阳光 |</source>
         <translation type="unfinished"></translation>
     </message>
@@ -133,47 +147,44 @@
 <context>
     <name>LightSettings</name>
     <message>
-        <location filename="LightSettings.qml" line="44"/>
+        <location filename="LightSettings.qml" line="39"/>
         <source>光源设置</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="LightSettings.qml" line="50"/>
+        <location filename="LightSettings.qml" line="46"/>
         <source>+</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="LightSettings.qml" line="95"/>
+        <location filename="LightSettings.qml" line="93"/>
         <source>-</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="LightSettings.qml" line="115"/>
+        <location filename="LightSettings.qml" line="113"/>
         <source>CLOSE  ⮃</source>
         <oldsource>CLOSE ⮃</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="LightSettings.qml" line="115"/>
+        <location filename="LightSettings.qml" line="113"/>
         <source>OPEN   ⮃</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="LightSettings.qml" line="155"/>
+        <location filename="LightSettings.qml" line="151"/>
         <source>照度 Lux</source>
-        <oldsource>照度 Lm</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="LightSettings.qml" line="206"/>
+        <location filename="LightSettings.qml" line="196"/>
         <source>位置 X    </source>
-        <oldsource>位置 X   </oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="LightSettings.qml" line="257"/>
+        <location filename="LightSettings.qml" line="241"/>
         <source>位置 Y    </source>
-        <oldsource>位置 Y   </oldsource>
         <translation type="unfinished"></translation>
     </message>
 </context>
