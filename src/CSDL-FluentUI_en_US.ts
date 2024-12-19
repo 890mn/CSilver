@@ -72,15 +72,15 @@
     </message>
     <message>
         <location filename="IndoorEnvironmentModule.qml" line="27"/>
-        <source>      平面宽/高 [%1] x [%2] ( cm )</source>
-        <oldsource>       平面宽/高 [%1] x [%2] ( cm )</oldsource>
+        <source>     平面宽/高 [%1] x [%2] ( cm )</source>
+        <oldsource>      平面宽/高 [%1] x [%2] ( cm )</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="IndoorEnvironmentModule.qml" line="69"/>
         <location filename="IndoorEnvironmentModule.qml" line="115"/>
-        <source>      平面宽/高 [%1] x [%2] ( Unit: cm )</source>
-        <oldsource>       平面宽/高 [%1] x [%2] ( Unit: cm )</oldsource>
+        <source>     平面宽/高 [%1] x [%2] ( Unit: cm )</source>
+        <oldsource>      平面宽/高 [%1] x [%2] ( Unit: cm )</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>

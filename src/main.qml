@@ -6,7 +6,7 @@ FluWindow {
     id: mainWindow
     width: 1081
     height: 627
-    minimumWidth: 947
+    minimumWidth: 900
     minimumHeight: 422
     title: qsTr("CSilver")
 

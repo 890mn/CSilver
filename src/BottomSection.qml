@@ -48,7 +48,7 @@ Item {
 
     FluFilledButton {
         text: qsTr("返回主页 / Back")
-        font.pixelSize: 25
+        font.pixelSize: 23
         font.family: smileFont.name
         implicitWidth: font.pixelSize * text.length * 0.6
         implicitHeight: font.pixelSize * 1.7
