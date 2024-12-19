@@ -5,10 +5,13 @@ import QtQuick.Controls 2.15
 import FluentUI 1.0
 
 Item {
+    id: initalLayout
     signal startSimulation()
 
     property bool horOn: false
     property bool verOn: false
+
+    property int maxLight: 8
 
     Column {
         id: mainState
@@ -129,13 +132,25 @@ Item {
                             //width: 80
                             //height: 30
                             inputMethodHints: Qt.ImhDigitsOnly
+
                             onEditingFinished: {
                                 let newValue = parseInt(text);
                                 if (!isNaN(newValue) && newValue >= 0 && newValue <= 32) {
-                                    lightSettings.maxLights = newValue;
+                                    maxLight = newValue;
                                 } else {
-                                    text = lightSettings.maxLights;
+                                    text = maxLight;
                                 }
+                                plusOn = true
+                            }
+
+                            Keys.onReturnPressed: {
+                                let newValue = parseInt(text);
+                                if (!isNaN(newValue) && newValue >= 0 && newValue <= 32) {
+                                    maxLight = newValue;
+                                } else {
+                                    text = maxLight;
+                                }
+                                plusOn = true
                             }
                         }
                     }

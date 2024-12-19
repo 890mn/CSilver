@@ -10,7 +10,7 @@ Rectangle {
     border.color: "#a0a0a0"
     color: "white"
 
-    property int maxSensors: 8
+    property int maxSensor: 8
     property alias sensorListModel: sensorListView.model
 
     Component.onCompleted: {
@@ -48,7 +48,7 @@ Rectangle {
                 text: qsTr("+")
                 font.pixelSize: 18
                 onClicked: {
-                    if (sensorListModel.count < maxSensors) {
+                    if (sensorListModel.count < maxSensor) {
                         sensorListModel.append({
                             "name": "Sensor-" + (sensorListModel.count + 1),
                             "positionX": 250,
@@ -56,7 +56,7 @@ Rectangle {
                             "expanded": false // 默认折叠
                         });
                         updateHeight();
-                        if (sensorListModel.count === maxSensors) {
+                        if (sensorListModel.count === maxSensor) {
                             addButton_Add.enabled = false
                         }
                     } else {
@@ -94,7 +94,7 @@ Rectangle {
                             text: qsTr("-")
                             font.pixelSize: 18
                             onClicked: {
-                                if (sensorListModel.count === 8) {
+                                if (sensorListModel.count === maxSensor) {
                                     addButton_Add.enabled = true
                                 }
 
@@ -182,12 +182,22 @@ Rectangle {
                                 width: 80
                                 height: 30
                                 inputMethodHints: Qt.ImhDigitsOnly
+
                                 onEditingFinished: {
                                     let newValue = parseInt(text);
                                     if (!isNaN(newValue) && newValue >= positionXSlider.from && newValue <= positionXSlider.to) {
                                         positionXSlider.value = newValue;
                                     } else {
-                                        text = positionXSlider.value.toFixed(0); // 恢复合法值
+                                        text = positionXSlider.value.toFixed(0);
+                                    }
+                                }
+
+                                Keys.onReturnPressed: {
+                                    let newValue = parseInt(text);
+                                    if (!isNaN(newValue) && newValue >= positionXSlider.from && newValue <= positionXSlider.to) {
+                                        positionXSlider.value = newValue;
+                                    } else {
+                                        text = positionXSlider.value.toFixed(0);
                                     }
                                 }
                             }
@@ -232,12 +242,22 @@ Rectangle {
                                 width: 80
                                 height: 30
                                 inputMethodHints: Qt.ImhDigitsOnly
+
                                 onEditingFinished: {
                                     let newValue = parseInt(text);
                                     if (!isNaN(newValue) && newValue >= positionYSlider.from && newValue <= positionYSlider.to) {
                                         positionYSlider.value = newValue;
                                     } else {
-                                        text = positionYSlider.value.toFixed(0); // 恢复合法值
+                                        text = positionYSlider.value.toFixed(0);
+                                    }
+                                }
+
+                                Keys.onReturnPressed: {
+                                    let newValue = parseInt(text);
+                                    if (!isNaN(newValue) && newValue >= positionYSlider.from && newValue <= positionYSlider.to) {
+                                        positionYSlider.value = newValue;
+                                    } else {
+                                        text = positionYSlider.value.toFixed(0);
                                     }
                                 }
                             }

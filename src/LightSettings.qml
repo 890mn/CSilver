@@ -11,8 +11,6 @@ Rectangle {
     color: "white"
 
     property alias lightSources: lightList.model
-    property int maxLights: 8
-
     Component.onCompleted: {
         simulationCanvas.lightSources = lightSources;
     }
@@ -46,7 +44,8 @@ Rectangle {
                 text: qsTr("+")
                 font.pixelSize: 18
                 onClicked: {
-                    if (lightSources.count < maxLights) {
+                    if (lightSources.count < initialLayout.maxLight) {
+                        //addButton_Light.enabled = true
                         lightSources.append({
                             "name": "Light-T8-" + (lightSources.count + 1),
                             "intensity": 50,
@@ -55,7 +54,7 @@ Rectangle {
                             "expanded": false
                         });
                         updateHeight();
-                        if (lightSources.count === maxLights) {
+                        if (lightSources.count === initialLayout.maxLight) {
                             addButton_Light.enabled = false
                         }
                     } else {
@@ -93,7 +92,7 @@ Rectangle {
                             text: qsTr("-")
                             font.pixelSize: 18
                             onClicked: {
-                                if (lightSources.count === 8) {
+                                if (lightSources.count === initialLayout.maxLight) {
                                     addButton_Light.enabled = true
                                 }
 
@@ -176,7 +175,17 @@ Rectangle {
                                 width: 80
                                 height: 30
                                 inputMethodHints: Qt.ImhDigitsOnly
+
                                 onEditingFinished: {
+                                    let newValue = parseInt(text);
+                                    if (!isNaN(newValue) && newValue >= intensitySlider.from && newValue <= intensitySlider.to) {
+                                        intensitySlider.value = newValue;
+                                    } else {
+                                        text = intensitySlider.value.toFixed(0);
+                                    }
+                                }
+
+                                Keys.onReturnPressed: {
                                     let newValue = parseInt(text);
                                     if (!isNaN(newValue) && newValue >= intensitySlider.from && newValue <= intensitySlider.to) {
                                         intensitySlider.value = newValue;
@@ -221,7 +230,17 @@ Rectangle {
                                 width: 80
                                 height: 30
                                 inputMethodHints: Qt.ImhDigitsOnly
+
                                 onEditingFinished: {
+                                    let newValue = parseInt(text);
+                                    if (!isNaN(newValue) && newValue >= positionXSlider.from && newValue <= positionXSlider.to) {
+                                        positionXSlider.value = newValue;
+                                    } else {
+                                        text = positionXSlider.value.toFixed(0);
+                                    }
+                                }
+
+                                Keys.onReturnPressed: {
                                     let newValue = parseInt(text);
                                     if (!isNaN(newValue) && newValue >= positionXSlider.from && newValue <= positionXSlider.to) {
                                         positionXSlider.value = newValue;
@@ -268,7 +287,6 @@ Rectangle {
                                 height: 30
                                 inputMethodHints: Qt.ImhDigitsOnly
 
-                                // 处理文本框失去焦点或用户点击外部区域时的回调
                                 onEditingFinished: {
                                     let newValue = parseInt(text);
                                     if (!isNaN(newValue) && newValue >= positionYSlider.from && newValue <= positionYSlider.to) {
@@ -278,7 +296,6 @@ Rectangle {
                                     }
                                 }
 
-                                // 处理按下 Enter 键时的回调
                                 Keys.onReturnPressed: {
                                     let newValue = parseInt(text);
                                     if (!isNaN(newValue) && newValue >= positionYSlider.from && newValue <= positionYSlider.to) {
