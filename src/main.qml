@@ -1,7 +1,7 @@
 import QtQuick 2.15
 import QtQuick.Window 2.15
 import FluentUI 1.0
-import "qrc:/layouts"
+import "layouts"
 
 FluWindow {
     id: mainWindow

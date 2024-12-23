@@ -4,7 +4,7 @@ import QtQuick.Layouts
 import FluentUI
 
 Rectangle {
-    id: indoorEnvironment
+    id: indoorSettings
     width: parent.width - 20
     height: 225
     radius: 10
@@ -47,7 +47,7 @@ Rectangle {
 
                 Row {
                     spacing: 10
-                    width: indoorEnvironment.width - 40
+                    width: indoorSettings.width - 40
 
                     Text {
                         y: 3
@@ -60,7 +60,7 @@ Rectangle {
 
                     FluSlider {
                         id: sliderWidth
-                        width: indoorEnvironment.width - 200
+                        width: indoorSettings.width - 200
                         height: 30
                         from: 0
                         to: 6400
@@ -93,7 +93,7 @@ Rectangle {
 
                 Row {
                     spacing: 10
-                    width: indoorEnvironment.width - 40
+                    width: indoorSettings.width - 40
 
                     Text {
                         y: 3
@@ -106,7 +106,7 @@ Rectangle {
 
                     FluSlider {
                         id: sliderHeight
-                        width: indoorEnvironment.width - 200
+                        width: indoorSettings.width - 200
                         height: 30
                         from: 0
                         to: 6400

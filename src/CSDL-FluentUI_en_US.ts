@@ -63,35 +63,31 @@
     </message>
 </context>
 <context>
-    <name>IndoorEnvironmentModule</name>
+    <name>IndoorSettings</name>
     <message>
-        <location filename="components/IndoorEnvironmentModule.qml" line="20"/>
+        <location filename="components/IndoorSettings.qml" line="20"/>
         <source>室内环境</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="components/IndoorEnvironmentModule.qml" line="27"/>
+        <location filename="components/IndoorSettings.qml" line="27"/>
         <source>     平面宽/高 [%1] x [%2] ( cm )</source>
-        <oldsource>      平面宽/高 [%1] x [%2] ( cm )</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="components/IndoorEnvironmentModule.qml" line="69"/>
-        <location filename="components/IndoorEnvironmentModule.qml" line="115"/>
-        <source>     平面宽/高 [%1] x [%2] ( Unit: cm )</source>
-        <oldsource>      平面宽/高 [%1] x [%2] ( Unit: cm )</oldsource>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="components/IndoorEnvironmentModule.qml" line="54"/>
+        <location filename="components/IndoorSettings.qml" line="54"/>
         <source>宽度 X   </source>
-        <oldsource>宽度 X  </oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="components/IndoorEnvironmentModule.qml" line="100"/>
+        <location filename="components/IndoorSettings.qml" line="69"/>
+        <location filename="components/IndoorSettings.qml" line="115"/>
+        <source>     平面宽/高 [%1] x [%2] ( Unit: cm )</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="components/IndoorSettings.qml" line="100"/>
         <source>长度 Y   </source>
-        <oldsource>长度 Y  </oldsource>
         <translation type="unfinished"></translation>
     </message>
 </context>

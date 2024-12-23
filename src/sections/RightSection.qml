@@ -1,6 +1,7 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.15
-import "qrc:/components"
+import "../components"
+
 ScrollView {
     id: rightSection
     clip: true
@@ -12,7 +13,7 @@ ScrollView {
         width: rightSection.width
         spacing: 10
 
-        IndoorEnvironmentModule {}
+        IndoorSettings {}
 
         LightSettings {}
 

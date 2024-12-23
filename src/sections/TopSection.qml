@@ -1,7 +1,7 @@
 import QtQuick 2.15
 import QtQuick.Layouts
 import FluentUI 1.0
-import "qrc:/components"
+import "../components"
 
 Item {
     property alias simulationCanvas: canvasArea
