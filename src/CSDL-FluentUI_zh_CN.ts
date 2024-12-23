@@ -56,86 +56,101 @@
 <context>
     <name>InitialLayout</name>
     <message>
-        <location filename="layout/InitialLayout.qml" line="28"/>
+        <location filename="layout/InitialLayout.qml" line="30"/>
         <source>仿真 · 照度模拟</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="layout/InitialLayout.qml" line="36"/>
+        <location filename="layout/InitialLayout.qml" line="38"/>
         <source>调控算法验证平台 |</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="layout/InitialLayout.qml" line="43"/>
+        <location filename="layout/InitialLayout.qml" line="45"/>
         <source> Powered By Qt6</source>
         <oldsource> Powered By Qt6 / FluentUI</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="layout/InitialLayout.qml" line="56"/>
+        <location filename="layout/InitialLayout.qml" line="58"/>
         <source>开始仿真 / Start</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="layout/InitialLayout.qml" line="67"/>
+        <location filename="layout/InitialLayout.qml" line="69"/>
         <source>环境设置 / Setting</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="layout/InitialLayout.qml" line="90"/>
+        <location filename="layout/InitialLayout.qml" line="92"/>
         <source>软件环境设置</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="layout/InitialLayout.qml" line="103"/>
+        <location filename="layout/InitialLayout.qml" line="105"/>
         <source>- CSilver 软件最小宽度 / 长度 [不建议小于默认数值]</source>
         <oldsource>- CSilver 软件最小宽度 / 最小长度</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="layout/InitialLayout.qml" line="137"/>
+        <location filename="layout/InitialLayout.qml" line="139"/>
         <source>X</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="layout/InitialLayout.qml" line="179"/>
+        <location filename="layout/InitialLayout.qml" line="181"/>
         <source>- 坐标轴 / 室内设定 颜色设置</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="layout/InitialLayout.qml" line="201"/>
+        <location filename="layout/InitialLayout.qml" line="203"/>
         <source>- 光源 颜色设置</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="layout/InitialLayout.qml" line="223"/>
+        <location filename="layout/InitialLayout.qml" line="225"/>
         <source>- 传感 颜色设置</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="layout/InitialLayout.qml" line="240"/>
+        <location filename="layout/InitialLayout.qml" line="242"/>
         <source>仿真环境设置</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="layout/InitialLayout.qml" line="253"/>
+        <location filename="layout/InitialLayout.qml" line="255"/>
         <source>- 是否开启竖向滑块？[建议：在多光源或传感存在时打开，默认关闭]</source>
         <oldsource>- 是否开启水平滑块？[建议：在多光源或传感存在时打开，默认关闭]</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="layout/InitialLayout.qml" line="274"/>
+        <location filename="layout/InitialLayout.qml" line="276"/>
         <source>- 光源数量限制 [Default: 8] [注:不建议新设定数值小于原数量，该行为将引发未定义事件]</source>
         <oldsource>- 光源数量限制 [Default: 8]</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="layout/InitialLayout.qml" line="316"/>
+        <location filename="layout/InitialLayout.qml" line="318"/>
         <source>- 传感数量限制 [Default: 8] [注:不建议新设定数值小于原数量，该行为将引发未定义事件]</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="layout/InitialLayout.qml" line="365"/>
+        <location filename="layout/InitialLayout.qml" line="355"/>
+        <source>检查更新 / Check for Update</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="layout/InitialLayout.qml" line="367"/>
+        <source>有新版本！</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="layout/InitialLayout.qml" line="377"/>
+        <source>已经是最新版本</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="layout/InitialLayout.qml" line="412"/>
         <source>愿你在仿真的世界沐浴五束阳光 |</source>
         <translation type="unfinished"></translation>
     </message>

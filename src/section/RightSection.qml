@@ -14,11 +14,8 @@ ScrollView {
         spacing: 10
 
         IndoorSettings {}
-
         LightSettings {}
-
         SensorSettings {}
-
-        Others {}
+        // Others {}
     }
 }

@@ -2,6 +2,7 @@
 #include <QQmlApplicationEngine>
 #include <QTranslator>
 #include <QQmlContext>
+#include "Backend.h"
 
 int main(int argc, char *argv[])
 {
@@ -21,6 +22,10 @@ int main(int argc, char *argv[])
     }
 
     QQmlApplicationEngine engine;
+
+    Backend backend;
+    engine.rootContext()->setContextProperty("backend", &backend);
+
     const QUrl url(QStringLiteral("qrc:/App.qml"));
     QObject::connect(&engine, &QQmlApplicationEngine::objectCreated,
                      &app, [url](QObject *obj, const QUrl &objUrl) {

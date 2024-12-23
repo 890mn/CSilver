@@ -17,7 +17,7 @@ else()
 endif()
 
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Core Quick)
-find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core Quick)
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core Quick Network)
 
 find_program(QT_LUPDATE NAMES lupdate)
 find_program(QT_LRELEASE NAMES lrelease)
@@ -35,12 +35,14 @@ add_custom_target(Script-UpdateTranslations
 set(PROJECT_SOURCES
     main.cpp
     qml.qrc
+    Backend.cpp
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(${PROJECT_NAME}
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
+        Backend.h
 
 
     )
@@ -55,6 +57,7 @@ add_dependencies(${PROJECT_NAME} Script-UpdateTranslations)
 target_link_libraries(${PROJECT_NAME} PRIVATE
     Qt${QT_VERSION_MAJOR}::Core
     Qt${QT_VERSION_MAJOR}::Quick
+    Qt${QT_VERSION_MAJOR}::Network
     fluentuiplugin
 )
 

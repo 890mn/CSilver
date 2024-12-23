@@ -14,6 +14,8 @@ Item {
     property int maxLight: 8
     property int maxSensor: 8
 
+    property string updateUrl: ""
+
     Column {
         id: mainState
         anchors.left: parent.left
@@ -348,6 +350,51 @@ Item {
                     }
                 }
             }
+
+            FluFilledButton {
+                text: qsTr("检查更新 / Check for Update")
+                font.pixelSize: mainWindow.height / 22
+                font.family: smileFont.name
+                implicitWidth: font.pixelSize * text.length * 0.5
+                implicitHeight: font.pixelSize * 1.7
+                onClicked: {
+                    backend.checkForUpdates()
+                }
+            }
+
+            FluContentDialog {
+                id: updateDialog
+                title: qsTr("有新版本！")
+                message: "A new version is available. Would you like to update?"
+
+                onPositiveClicked: {
+                    Qt.openUrlExternally(updateUrl);
+                }
+            }
+
+            FluContentDialog {
+                id: noUpdateDialog
+                title:  qsTr("已经是最新版本")
+                message: "Current Version is the Lastest. Click yes for more detail."
+
+                onPositiveClicked: {
+                    Qt.openUrlExternally("https://github.com/890mn/CSilver/releases/");
+                }
+            }
+
+            Connections {
+                target: backend
+
+                function onUpdateAvailable(latestVersion, releaseUrl) {
+                    updateDialog.message = "New version " + latestVersion + " is available. Would you like to update?";
+                    updateUrl = releaseUrl;
+                    updateDialog.open();
+                }
+
+                function onNoUpdateAvailable() {
+                    noUpdateDialog.open();
+                }
+            }
         }
     }
 
@@ -368,7 +415,7 @@ Item {
             font.pixelSize: mainWindow.height / 30
             font.family: smileFont.name
             font.bold: true
-            text: " CSDLighting-Silver.0.1    "
+            text: " CSDLighting-Silver.0.4 Release    "
             color: Qt.rgba(87/255,151/255,180/255,255/255)
         }
     }
