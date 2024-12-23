@@ -1,6 +1,7 @@
 import QtQuick 2.15
 import QtQuick.Window 2.15
 import FluentUI 1.0
+import "qrc:/layouts"
 
 FluWindow {
     id: mainWindow
@@ -17,12 +18,12 @@ FluWindow {
 
     FontLoader {
         id: brushFont
-        source: "qrc:/BrushGrunge.ttf"
+        source: "qrc:/assets/BrushGrunge.ttf"
     }
 
     FontLoader {
         id: smileFont
-        source: "qrc:/SmileySans-Oblique.ttf"
+        source: "qrc:/assets/SmileySans-Oblique.ttf"
     }
 
     // 背景换成白色纯色背景
@@ -30,7 +31,7 @@ FluWindow {
         anchors.fill: parent
 
         Image{
-            source: "qrc:/back.png"
+            source: "qrc:/assets/back.png"
             anchors.fill: parent
             fillMode: Image.PreserveAspectCrop
             opacity: 0.7
