@@ -2,7 +2,6 @@
 #include <QQmlApplicationEngine>
 #include <QTranslator>
 #include <QQmlContext>
-#include "simcontroller.h"
 
 int main(int argc, char *argv[])
 {
@@ -21,11 +20,7 @@ int main(int argc, char *argv[])
         }
     }
 
-    SimController simController;
-
     QQmlApplicationEngine engine;
-    engine.rootContext()->setContextProperty("simController", &simController);
-
     const QUrl url(QStringLiteral("qrc:/App.qml"));
     QObject::connect(&engine, &QQmlApplicationEngine::objectCreated,
                      &app, [url](QObject *obj, const QUrl &objUrl) {
