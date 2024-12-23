@@ -2,7 +2,7 @@ import QtQuick 2.15
 import QtQuick.Controls 2.15
 import QtQuick.Layouts
 import FluentUI 1.0
-import "../sections"
+import "../section"
 
 Item {
     signal returnToHome()

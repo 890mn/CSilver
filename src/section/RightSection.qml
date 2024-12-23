@@ -1,6 +1,6 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.15
-import "../components"
+import "../component"
 
 ScrollView {
     id: rightSection
@@ -17,7 +17,7 @@ ScrollView {
 
         LightSettings {}
 
-        AddSettings {}
+        SensorSettings {}
 
         Others {}
     }

@@ -3,7 +3,7 @@ import QtQuick.Controls 2.15
 import FluentUI
 
 Rectangle {
-    id: addSettings
+    id: sensorSettings
     width: parent.width - 20
     height: 60
     radius: 10
@@ -24,7 +24,7 @@ Rectangle {
             totalHeight += item.expanded ? 150 : 60; // 展开状态光源占 150 高度，折叠状态占 60 高度
         }
 
-        addSettings.height = totalHeight;
+        sensorSettings.height = totalHeight;
     }
 
     Column {
