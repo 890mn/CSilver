@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.20)
 
-project(CSDL-FluentUI VERSION 0.1 LANGUAGES CXX)
+project(CSilver VERSION 1.0 LANGUAGES CXX)
 
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
@@ -22,15 +22,8 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core Quick Network)
 find_program(QT_LUPDATE NAMES lupdate)
 find_program(QT_LRELEASE NAMES lrelease)
 file(GLOB TS_FILE_PATHS ${CMAKE_CURRENT_LIST_DIR}/ *.ts)
-add_custom_target(Script-UpdateTranslations
-    COMMAND ${QT_LUPDATE} ${CMAKE_CURRENT_LIST_DIR} -ts ${PROJECT_NAME}_en_US.ts WORKING_DIRECTORY ${CMAKE_CURRENT_LIST_DIR}
-    COMMAND ${QT_LUPDATE} ${CMAKE_CURRENT_LIST_DIR} -ts ${PROJECT_NAME}_zh_CN.ts WORKING_DIRECTORY ${CMAKE_CURRENT_LIST_DIR}
-    COMMAND ${QT_LRELEASE} ${PROJECT_NAME}_en_US.ts WORKING_DIRECTORY ${CMAKE_CURRENT_LIST_DIR}
-    COMMAND ${QT_LRELEASE} ${PROJECT_NAME}_zh_CN.ts WORKING_DIRECTORY ${CMAKE_CURRENT_LIST_DIR}
-    COMMAND ${CMAKE_COMMAND} -E make_directory ${APPLICATION_DIR_PATH}/i18n
-    COMMAND ${CMAKE_COMMAND} -E copy ${PROJECT_NAME}_en_US.qm ${PROJECT_NAME}_zh_CN.qm ${APPLICATION_DIR_PATH}/i18n
-    SOURCES ${TS_FILE_PATHS}
-)
+
+set(EXE_ICON_PATH "${CMAKE_SOURCE_DIR}/src/asset/logo.ico")
 
 set(PROJECT_SOURCES
     main.cpp
@@ -43,16 +36,12 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
         Backend.h
-
-
     )
 else()
     add_executable(${PROJECT_NAME}
         ${PROJECT_SOURCES}
     )
 endif()
-
-add_dependencies(${PROJECT_NAME} Script-UpdateTranslations)
 
 target_link_libraries(${PROJECT_NAME} PRIVATE
     Qt${QT_VERSION_MAJOR}::Core
@@ -70,6 +59,7 @@ set_target_properties(${PROJECT_NAME} PROPERTIES
     MACOSX_BUNDLE_SHORT_VERSION_STRING ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}
     MACOSX_BUNDLE TRUE
     WIN32_EXECUTABLE TRUE
+    ICON "${EXE_ICON_PATH}"
 )
 
 include(GNUInstallDirs)
@@ -83,17 +73,6 @@ if(QT_VERSION_MAJOR EQUAL 6)
 endif()
 
 if (CMAKE_BUILD_TYPE MATCHES "Release")
-    if (APPLE)
-        find_program(QT_DEPLOY_QT NAMES macdeployqt)
-        add_custom_target(Script-DeployRelease
-            COMMAND ${CMAKE_COMMAND} -E remove_directory ${CMAKE_SOURCE_DIR}/dist
-            COMMAND ${CMAKE_COMMAND} -E copy_directory ${CMAKE_RUNTIME_OUTPUT_DIRECTORY} ${CMAKE_SOURCE_DIR}/dist
-            COMMAND ${QT_DEPLOY_QT} ${CMAKE_SOURCE_DIR}/dist/${PROJECT_NAME}.app -qmldir=${CMAKE_CURRENT_LIST_DIR}
-            COMMENT "MacOs Deploying Qt Dependencies After Build........."
-            SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/CMakeLists.txt
-            WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
-        )
-    endif()
     if(WIN32)
         find_program(QT_DEPLOY_QT NAMES windeployqt)
         add_custom_target(Script-DeployRelease
@@ -104,5 +83,12 @@ if (CMAKE_BUILD_TYPE MATCHES "Release")
             SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/CMakeLists.txt
             WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
         )
-endif()
+    add_custom_target(SetIcon
+        COMMAND rcedit ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/${PROJECT_NAME}.exe --set-icon ${EXE_ICON_PATH}
+        COMMENT "Setting icon for executable"
+    )
+
+    add_dependencies(Script-DeployRelease SetIcon)
+
+    endif()
 endif()

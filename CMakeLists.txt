@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.20)
 
-project(CSDL-FluentUI VERSION 0.4)
+project(CSilver VERSION 0.4)
 
 message(STATUS "Project version: ${PROJECT_VERSION}")
 
