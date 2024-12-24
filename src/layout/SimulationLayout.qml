@@ -11,7 +11,6 @@ Item {
         id: simulationLayout
         anchors.fill: parent
 
-        // 顶部区域
         TopSection {
             id: topSection
             width: parent.width
@@ -19,7 +18,6 @@ Item {
             anchors.horizontalCenter: parent.horizontalCenter
         }
 
-        // 底部区域
         BottomSection {
             id: bottomSection
             width: parent.width

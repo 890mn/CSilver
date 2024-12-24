@@ -18,7 +18,7 @@ Rectangle {
         ListElement { name: "Light-T8-1"; positionX: 100; positionY: 150; intensity: 50 }
     }
 
-    property var addSources: ListModel {
+    property var sensorSources: ListModel {
         ListElement { name: "Sensor-1"; positionX: 100; positionY: 150}
     }
 
@@ -125,12 +125,13 @@ Rectangle {
                     ctx.fillStyle = "#000000";
                     ctx.font = "14px Arial";
                     ctx.fillText(source.name, rectXL + 58, rectYL - rectHeightL - 5); // 名称显示在矩形上方
+                    ctx.fillText(source.intensity, rectXL + 58, rectYL - rectHeightL - 20);
                 }
             }
 
-            // 绘制 addSources 光源
-            for (let l = 0; l < addSources.count; l++) {
-                const sourceA = addSources.get(l);
+            // 绘制 sensorSources 光源
+            for (let l = 0; l < sensorSources.count; l++) {
+                const sourceA = sensorSources.get(l);
 
                 // 绘制光源矩形条
                 ctx.fillStyle = "#FFFFFF"; // 光源条颜色
@@ -157,7 +158,7 @@ Rectangle {
     }
 
     Connections {
-        target: addSources
+        target: sensorSources
         function onRowsInserted(parent, first, last) {
             canvas.requestPaint()
         }

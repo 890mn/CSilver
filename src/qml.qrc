@@ -14,7 +14,6 @@
         <file>component/SensorSettings.qml</file>
         <file>component/IndoorSettings.qml</file>
         <file>component/LightSettings.qml</file>
-        <file>component/Others.qml</file>
         <file>asset/logo.ico</file>
     </qresource>
 </RCC>

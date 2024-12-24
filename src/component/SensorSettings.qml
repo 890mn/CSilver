@@ -13,7 +13,7 @@ Rectangle {
     property alias sensorListModel: sensorListView.model
 
     Component.onCompleted: {
-        simulationCanvas.addSources = sensorListModel; // 绑定外部模型
+        simulationCanvas.sensorSources = sensorListModel; // 绑定外部模型
     }
 
     function updateHeight() {

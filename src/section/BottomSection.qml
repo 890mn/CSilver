@@ -10,6 +10,7 @@ Item {
         height: parent.height
         Layout.fillWidth: true
         x: 80
+        y: 5
 
         Rectangle {
             color: "transparent"

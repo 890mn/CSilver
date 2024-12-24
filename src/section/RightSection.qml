@@ -16,6 +16,5 @@ ScrollView {
         IndoorSettings {}
         LightSettings {}
         SensorSettings {}
-        // Others {}
     }
 }
