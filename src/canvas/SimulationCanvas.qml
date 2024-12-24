@@ -22,8 +22,22 @@ Rectangle {
         ListElement { name: "Sensor-1"; positionX: 100; positionY: 150}
     }
 
+    property var illuminanceMatrix: Array = [] // 照度矩阵
+
     onRectWidthChanged: adjustAxes()
     onRectHeightChanged: adjustAxes()
+
+    function initializeIlluminanceMatrix() {
+        illuminanceMatrix = [];
+        for (let i = 0; i <= 10; i++) {
+            let row = [];
+            for (let j = 0; j <= 10; j++) {
+                row.push(0);
+            }
+            illuminanceMatrix.push(row);
+        }
+        console.log("Illuminance Matrix Initialized:", illuminanceMatrix);
+    }
 
     function updateRectangle(width, height) {
         rectWidth = width;
@@ -104,21 +118,19 @@ Rectangle {
 
             // 绘制低照度点值：与坐标轴刻度对齐，初始照度接近 0
             const pointRadius = 3; // 点的半径
-            ctx.fillStyle = "#cccccc"; // 默认低照度颜色
-
-            for (let i = 0; i <= 10; i++) { // X 轴刻度
-                for (let j = 0; j <= 10; j++) { // Y 轴刻度
-                    const x = padding + (i / 10) * axisWidth;
+            for (let i = 0; i < illuminanceMatrix.length; i++) { // X 轴刻度
+                for (let j = 0; j < illuminanceMatrix[i].length; j++) { // Y 轴刻度
+                    const x = padding + (i / 10) * axisWidth; // 检查是否与刻度对齐
                     const y = height - padding - (j / 10) * axisHeight;
 
-                    // 初始低照度设为接近 0
-                    const initialIlluminance = 0; // 接近零的初始状态
+                    const initialIlluminance = illuminanceMatrix[i]?.[j] ?? 0; // 确保访问矩阵值
 
-                    // 可视化低照度点
-                    ctx.fillStyle = "#cccccc"; // 固定灰色
+                    ctx.fillStyle = `rgba(204, 204, 204, ${Math.max(0.1, initialIlluminance / 100)})`; // 设置最低透明度
                     ctx.beginPath();
                     ctx.arc(x, y, pointRadius, 0, 2 * Math.PI);
                     ctx.fill();
+
+                    console.log(`Illuminance at (${i}, ${j}): ${initialIlluminance}`);
                 }
             }
 
@@ -126,7 +138,6 @@ Rectangle {
             for (let k = 0; k < lightSources.count; k++) {
                 const source = lightSources.get(k);
 
-                // 使用不同的颜色或样式
                 ctx.fillStyle = "#FFFFFF"; // 光源条颜色
                 ctx.strokeStyle = cosSTextColor; // 红色边框，区分光源类型
                 ctx.lineWidth = 2;
@@ -153,7 +164,6 @@ Rectangle {
             for (let l = 0; l < sensorSources.count; l++) {
                 const sourceA = sensorSources.get(l);
 
-                // 绘制光源矩形条
                 ctx.fillStyle = "#FFFFFF"; // 光源条颜色
                 ctx.strokeStyle = cosTTextColor; // 光源边框颜色
                 ctx.lineWidth = 2;
@@ -164,11 +174,9 @@ Rectangle {
                     const rectWidthA = 50; // 固定宽度
                     const rectHeightA = 10; // 固定高度
 
-                    // 绘制光源矩形条
                     ctx.fillRect(rectXA, rectYA - rectHeightA, rectWidthA, rectHeightA);
                     ctx.strokeRect(rectXA, rectYA - rectHeightA, rectWidthA, rectHeightA);
 
-                    // 绘制光源名称
                     ctx.fillStyle = "#000000";
                     ctx.font = "14px Arial";
                     ctx.fillText(sourceA.name, rectXA + 58, rectYA - rectHeightA - 5); // 名称显示在矩形上方
@@ -215,4 +223,10 @@ Rectangle {
             canvas.requestPaint()
         }
     }
+
+    Component.onCompleted: {
+        initializeIlluminanceMatrix();
+        canvas.requestPaint(); // 初始化完成后强制刷新画布
+    }
+
 }
