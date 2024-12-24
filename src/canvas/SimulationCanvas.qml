@@ -1,5 +1,5 @@
-import QtQuick 2.15;
-import FluentUI;
+import QtQuick 2.15
+import FluentUI
 
 Rectangle {
     id: simulationCanvas
@@ -19,7 +19,7 @@ Rectangle {
     }
 
     property var sensorSources: ListModel {
-        ListElement { name: "Sensor-1"; positionX: 100; positionY: 150 }
+        ListElement { name: "Sensor-1"; positionX: 100; positionY: 150}
     }
 
     onRectWidthChanged: adjustAxes()
@@ -92,9 +92,8 @@ Rectangle {
                 ctx.fillText(j.toFixed(0), padding - 20, y + 3); // 调整文字位置与轴线分离
             }
 
-            // 绘制矩形
             if (rectWidth > 0 && rectHeight > 0) {
-                ctx.strokeStyle = "#FF0000";
+                ctx.strokeStyle = cosFTextColor;
                 ctx.lineWidth = 2;
                 const rectX = padding;
                 const rectY = height - padding - (rectHeight / maxY) * axisHeight;
@@ -103,25 +102,20 @@ Rectangle {
                 ctx.strokeRect(rectX, rectY, scaledWidth, scaledHeight);
             }
 
-            // 绘制点值：平均分布
-            const pointsX = 10; // X 方向的点数
-            const pointsY = 10; // Y 方向的点数
-            const pointRadius = 3; // 点半径
+            // 绘制低照度点值：与坐标轴刻度对齐，初始照度接近 0
+            const pointRadius = 3; // 点的半径
+            ctx.fillStyle = "#cccccc"; // 默认低照度颜色
 
-            for (let i = 0; i <= pointsX; i++) {
-                for (let j = 0; j <= pointsY; j++) {
-                    const x = padding + (i / pointsX) * axisWidth;
-                    const y = height - padding - (j / pointsY) * axisHeight;
-                    const value = Math.random() * 100; // 模拟值
+            for (let i = 0; i <= 10; i++) { // X 轴刻度
+                for (let j = 0; j <= 10; j++) { // Y 轴刻度
+                    const x = padding + (i / 10) * axisWidth;
+                    const y = height - padding - (j / 10) * axisHeight;
 
-                    if (value < 33) {
-                        ctx.fillStyle = "#00FF00"; // 低值
-                    } else if (value < 66) {
-                        ctx.fillStyle = "#FFFF00"; // 中值
-                    } else {
-                        ctx.fillStyle = "#FF0000"; // 高值
-                    }
+                    // 初始低照度设为接近 0
+                    const initialIlluminance = 0; // 接近零的初始状态
 
+                    // 可视化低照度点
+                    ctx.fillStyle = "#cccccc"; // 固定灰色
                     ctx.beginPath();
                     ctx.arc(x, y, pointRadius, 0, 2 * Math.PI);
                     ctx.fill();
@@ -132,24 +126,52 @@ Rectangle {
             for (let k = 0; k < lightSources.count; k++) {
                 const source = lightSources.get(k);
 
+                // 使用不同的颜色或样式
+                ctx.fillStyle = "#FFFFFF"; // 光源条颜色
+                ctx.strokeStyle = cosSTextColor; // 红色边框，区分光源类型
+                ctx.lineWidth = 2;
+
                 if (source && source.positionX !== undefined && source.positionY !== undefined) {
-                    const rectX = padding + (source.positionX / maxX) * axisWidth;
-                    const rectY = height - padding - (source.positionY / maxY) * axisHeight;
+                    const rectXL = padding + (source.positionX / maxX) * axisWidth;
+                    const rectYL = height - padding - (source.positionY / maxY) * axisHeight;
+                    const rectWidthL = 50; // 固定宽度
+                    const rectHeightL = 10; // 固定高度
 
-                    ctx.fillStyle = "#FFFFFF";
-                    ctx.strokeStyle = "#000000";
-                    ctx.lineWidth = 2;
-
-                    // 绘制光源位置
-                    ctx.beginPath();
-                    ctx.arc(rectX, rectY, 10, 0, 2 * Math.PI);
-                    ctx.fill();
-                    ctx.stroke();
+                    // 绘制光源矩形条
+                    ctx.fillRect(rectXL, rectYL - rectHeightL, rectWidthL, rectHeightL);
+                    ctx.strokeRect(rectXL, rectYL - rectHeightL, rectWidthL, rectHeightL);
 
                     // 绘制光源名称
                     ctx.fillStyle = "#000000";
                     ctx.font = "14px Arial";
-                    ctx.fillText(source.name, rectX + 12, rectY - 12);
+                    ctx.fillText(source.name, rectXL + 58, rectYL - rectHeightL - 5); // 名称显示在矩形上方
+                    ctx.fillText(source.intensity, rectXL + 58, rectYL - rectHeightL - 20);
+                }
+            }
+
+            // 绘制 sensorSources 光源
+            for (let l = 0; l < sensorSources.count; l++) {
+                const sourceA = sensorSources.get(l);
+
+                // 绘制光源矩形条
+                ctx.fillStyle = "#FFFFFF"; // 光源条颜色
+                ctx.strokeStyle = cosTTextColor; // 光源边框颜色
+                ctx.lineWidth = 2;
+
+                if (sourceA && sourceA.positionX !== undefined && sourceA.positionY !== undefined) {
+                    const rectXA = padding + (sourceA.positionX / maxX) * axisWidth;
+                    const rectYA = height - padding - (sourceA.positionY / maxY) * axisHeight;
+                    const rectWidthA = 50; // 固定宽度
+                    const rectHeightA = 10; // 固定高度
+
+                    // 绘制光源矩形条
+                    ctx.fillRect(rectXA, rectYA - rectHeightA, rectWidthA, rectHeightA);
+                    ctx.strokeRect(rectXA, rectYA - rectHeightA, rectWidthA, rectHeightA);
+
+                    // 绘制光源名称
+                    ctx.fillStyle = "#000000";
+                    ctx.font = "14px Arial";
+                    ctx.fillText(sourceA.name, rectXA + 58, rectYA - rectHeightA - 5); // 名称显示在矩形上方
                 }
             }
         }
@@ -177,6 +199,19 @@ Rectangle {
             canvas.requestPaint()
         }
         function onDataChanged(start, end, roles) {
+            canvas.requestPaint()
+        }
+    }
+
+    Connections {
+        target: mainWindow
+        function onCosFTextColorChanged() {
+            canvas.requestPaint()
+        }
+        function onCosSTextColorChanged() {
+            canvas.requestPaint()
+        }
+        function onCosTTextColorChanged() {
             canvas.requestPaint()
         }
     }
